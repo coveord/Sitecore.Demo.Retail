@@ -1,0 +1,28 @@
+﻿---
+ID: "c5f30323-9c22-477a-b0c5-0fe2ba1090a7"
+Parent: "ac3b0c6b-3eba-48c4-aea0-a1043eaedf07"
+Template: "dfb615ac-9dfd-418f-84eb-15141e88d303"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Sorts/Retail Rating Field Sort
+DB: master
+SharedFields:
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: ratingSort
+- ID: "e59804dd-43af-4428-9dfd-f21a59329fad"
+  Hint: SortField
+  Value: Rating
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170814T191749Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b2235c32-0b2c-468c-bc58-6759a1bb3e9b"
+      Hint: SortCaption
+      Value: Rating

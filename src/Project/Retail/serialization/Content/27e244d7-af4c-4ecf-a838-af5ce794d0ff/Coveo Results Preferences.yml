@@ -1,0 +1,18 @@
+﻿---
+ID: "b977323b-ba37-4465-a91f-c8dc47f73063"
+Parent: "27e244d7-af4c-4ecf-a838-af5ce794d0ff"
+Template: "90a9f919-0cb8-4cee-bf88-5e4b8a306626"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Settings Button Options/Coveo Results Preferences
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170815T215704Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

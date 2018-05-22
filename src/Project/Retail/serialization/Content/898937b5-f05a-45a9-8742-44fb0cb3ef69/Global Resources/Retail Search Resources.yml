@@ -1,0 +1,26 @@
+﻿---
+ID: "935d727d-dcff-47c5-9651-3114f8ce5785"
+Parent: "16271efa-1f5d-4f52-a349-edcdec9565cd"
+Template: "1a7f04cc-504e-4b7b-b546-136e21b348fe"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Resources/Retail Search Resources
+DB: master
+SharedFields:
+- ID: "430de9b8-55aa-4e00-812c-7edbd7b4df0c"
+  Hint: UseLocalFiles
+  Type: Checkbox
+  Value: 0
+- ID: "8341b96d-c9ac-4757-95ed-b90567834ae2"
+  Hint: CdnVersion
+  Value: 2.4094
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180508T132451Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

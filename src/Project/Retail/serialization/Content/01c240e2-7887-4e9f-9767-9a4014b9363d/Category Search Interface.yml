@@ -1,0 +1,37 @@
+﻿---
+ID: "0d6d3212-9405-4944-8a51-37a75462c06a"
+Parent: "01c240e2-7887-4e9f-9767-9a4014b9363d"
+Template: "ceea573d-0220-49e6-8f4e-c9730186bf4a"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Category Pages/Category Search Page Search Interfaces/Category Search Interface
+DB: master
+SharedFields:
+- ID: "4eaa4851-dde1-47a5-a13d-b433533ff78a"
+  Hint: FilterExpressionRules
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{66BAE9B3-333A-4FC7-A6E6-FE492397EC74}">
+        <conditions>
+          <condition
+            id="{04D3C3C8-FF94-477A-BC2B-F17238CB239A}"
+            uid="C5B951C768C34BFDA35B6B93BA8BDE24"
+            templateid="{225F8638-2611-4841-9B89-19A5440A1DA1}" />
+        </conditions>
+      </rule>
+    </ruleset>
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: test
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T154306Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

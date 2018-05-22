@@ -1,0 +1,18 @@
+﻿---
+ID: "7b4a1ce6-42e1-4b6b-9179-bf9c76219ce5"
+Parent: "050fc75d-2693-450c-ad2e-fa125f21f83c"
+Template: "e01350b5-140d-472e-a5c7-067a81b54e01"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Results List/Retails Omnibox Result List
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180515T213900Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

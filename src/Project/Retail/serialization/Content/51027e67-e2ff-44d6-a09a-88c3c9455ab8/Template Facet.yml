@@ -1,0 +1,34 @@
+﻿---
+ID: "806b596a-d477-4f79-8518-70e66f1dfb75"
+Parent: "51027e67-e2ff-44d6-a09a-88c3c9455ab8"
+Template: "dc181cdf-76ab-45d5-9349-443af40bd6e2"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Facets/Template Facet
+DB: master
+SharedFields:
+- ID: "21f86a99-b823-4cbb-8183-dea9d72855ca"
+  Hint: FacetField
+  Value: _templatename
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: facetTemplateName
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170915T135404Z
+    - ID: "56c4a9bf-b2a0-43f5-a055-c74037adb284"
+      Hint: FacetValueCaption
+      Value: Subscription=Game%20subscription&GameConsole=Game%20console&SmallAppliance=Small%20appliance&Phone=Mobility%20%26%20smartphones
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "976807a8-e981-4127-9f1f-f12188a5550d"
+      Hint: FacetTitle
+      Value: Product type
+    - ID: "ba7a0fc4-8dee-4c05-9e80-a7e6b8cf89b7"
+      Hint: FacetName
+      Value: Product type

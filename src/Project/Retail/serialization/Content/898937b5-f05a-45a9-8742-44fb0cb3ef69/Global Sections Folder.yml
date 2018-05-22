@@ -1,0 +1,18 @@
+﻿---
+ID: "9b6a1f44-24e4-446f-a3d0-71f61f99424c"
+Parent: "898937b5-f05a-45a9-8742-44fb0cb3ef69"
+Template: "a7ad7b3f-3ca6-4507-8fae-2f7beaa3e6ce"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Sections Folder
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180510T145613Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

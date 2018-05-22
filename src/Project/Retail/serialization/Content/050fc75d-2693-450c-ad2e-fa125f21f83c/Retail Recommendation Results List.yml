@@ -1,0 +1,25 @@
+﻿---
+ID: "cd86a4d7-b3fa-4c8b-89c1-db7c53ed3218"
+Parent: "050fc75d-2693-450c-ad2e-fa125f21f83c"
+Template: "5787604f-f0b7-412f-a3b3-9e2ee3a67038"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Results List/Retail Recommendation Results List
+DB: master
+SharedFields:
+- ID: "c1469571-d958-4250-8ed0-3f96f3f17f30"
+  Hint: ResultsLayout
+  Value: "{C8AF1B72-A671-4761-87E4-6308F1299916}"
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: retailRecommendation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T231129Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

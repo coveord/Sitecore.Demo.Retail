@@ -1,0 +1,26 @@
+﻿---
+ID: "aa20d2d2-dbea-4583-816d-5eb9f07e1455"
+Parent: "898937b5-f05a-45a9-8742-44fb0cb3ef69"
+Template: "86c26f99-eafd-441b-a2d7-d46ac1e742df"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Result Templates
+DB: master
+BranchID: "a16527d0-f782-48a9-beda-fc49de2c0a57"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T184656Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

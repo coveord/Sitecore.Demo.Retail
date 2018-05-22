@@ -1,0 +1,22 @@
+﻿---
+ID: "4bfda6a8-4c5b-4a4d-8969-6069f07b7f1e"
+Parent: "09fb687a-ffe6-4687-8123-1a27f2d8f747"
+Template: "6ed07898-7f12-4f79-a97b-c5e6a8666230"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Position Providers/Coveo Google API Position Provider
+DB: master
+SharedFields:
+- ID: "3ad6b782-647b-49f8-b3fb-872833832336"
+  Hint: GoogleAPIKey
+  Value: AIzaSyAyeHXbhksCSTf7Lha4zndnBNCtLKhZ4J4
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T162017Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,22 @@
+﻿---
+ID: "f2327d0a-1b5f-42f3-bc2b-9b3ca8a2070a"
+Parent: "ac3b0c6b-3eba-48c4-aea0-a1043eaedf07"
+Template: "4c5dcc8d-b30a-4c94-9b07-a7462d2582ee"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Sorts/Retail Relevancy Sort
+DB: master
+SharedFields:
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: "_46926A4C-2FAA-480A-B1D0-14A0F21578B2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170814T162619Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

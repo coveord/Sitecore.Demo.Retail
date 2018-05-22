@@ -1,0 +1,40 @@
+﻿---
+ID: "fb5770d9-c280-4f82-b57f-f3b0685f9e64"
+Parent: "9670400b-e29e-40da-a9c1-b7df9fd1d0db"
+Template: "75a4ffc2-2607-41a2-ab3c-992d8ae98dde"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Tabs/Computer Departement Tab
+DB: master
+SharedFields:
+- ID: "4eaa4851-dde1-47a5-a13d-b433533ff78a"
+  Hint: FilterExpressionRules
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{36214C06-A828-4EDB-AA4F-D60D1D0D1850}">
+        <conditions>
+          <condition
+            id="{1E6C9830-45FA-4801-9D4D-E87B76C13F7D}"
+            uid="FE148E2065DF413389D6A6D5A9732B29"
+            itemid="{0C5885DC-5BDC-43E4-BB22-47DD80578B1B}" />
+        </conditions>
+      </rule>
+    </ruleset>
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: tabComputers
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170810T194912Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "646692a3-52a9-4dfa-bc75-305d91f6f05d"
+      Hint: TabCaption
+      Value: Computers

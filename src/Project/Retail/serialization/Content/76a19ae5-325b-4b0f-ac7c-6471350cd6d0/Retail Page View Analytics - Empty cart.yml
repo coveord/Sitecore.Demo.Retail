@@ -1,0 +1,22 @@
+﻿---
+ID: "39f1386f-33c9-473d-9c4d-71a609153855"
+Parent: "76a19ae5-325b-4b0f-ac7c-6471350cd6d0"
+Template: "24011776-43a0-41fb-92ef-068e42cb2fa3"
+Path: "/sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Analytics/Retail Page View Analytics - Empty cart"
+DB: master
+SharedFields:
+- ID: "517ced1c-82a4-4ab0-9286-9254b09eef31"
+  Hint: CoveoUsageAnalyticsCustomMetadata
+  Value: c_context_itemsInCart=false
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T201414Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

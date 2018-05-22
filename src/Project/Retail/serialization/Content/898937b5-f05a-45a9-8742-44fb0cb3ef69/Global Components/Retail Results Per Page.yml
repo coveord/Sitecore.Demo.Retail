@@ -1,0 +1,18 @@
+﻿---
+ID: "3c3da749-c38e-4855-8fc5-f49572eef937"
+Parent: "4568aeab-d7b9-49a6-a8e0-1bb5fa345987"
+Template: "580e9d70-b021-4daf-8674-921c7c0945c5"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Components/Retail Results Per Page
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T211910Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

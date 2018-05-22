@@ -1,0 +1,52 @@
+﻿---
+ID: "cca626a6-1264-4b51-b9cf-0d8cb8714c22"
+Parent: "9aa4e44b-9c0e-4670-80ba-aa501eefe63a"
+Template: "ceea573d-0220-49e6-8f4e-c9730186bf4a"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Search Interfaces/Retail Search Interface
+DB: master
+SharedFields:
+- ID: "2ddc6be7-085d-468b-896b-af450635d728"
+  Hint: EnableHistory
+  Value: 1
+- ID: "4eaa4851-dde1-47a5-a13d-b433533ff78a"
+  Hint: FilterExpressionRules
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{47969222-486F-4A85-B7B5-83F6542C3140}">
+        <conditions>
+          <condition
+            id="{04D3C3C8-FF94-477A-BC2B-F17238CB239A}"
+            uid="B7C71D61E2DF4D94823B698DA9FBF390"
+            templateid="{225F8638-2611-4841-9B89-19A5440A1DA1}" />
+        </conditions>
+      </rule>
+    </ruleset>
+- ID: "55338b23-d40f-42c5-8937-fac155dacbfe"
+  Hint: BoostExpressionRules
+  Type: Rules
+  Value: <ruleset />
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: RetailSearchInterface
+- ID: "ecbda518-938a-46f5-bcf4-d6938149603b"
+  Hint: EnableAutomaticBoosting
+  Value: |
+    <?xml version="1.0" encoding="utf-16"?>
+    <AutomaticBoostingState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Enabled>false</Enabled>
+      <Profiles />
+    </AutomaticBoostingState>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T205758Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

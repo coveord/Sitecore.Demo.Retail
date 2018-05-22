@@ -1,0 +1,52 @@
+﻿---
+ID: "d3b8067b-930f-4f7a-a00b-55e9727651a1"
+Parent: "51027e67-e2ff-44d6-a09a-88c3c9455ab8"
+Template: "dc181cdf-76ab-45d5-9349-443af40bd6e2"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Facets/Departement facet
+DB: master
+SharedFields:
+- ID: "0d967e5f-c182-4744-beb4-12a147342317"
+  Hint: FacetSort
+  Value: "{65C2940F-0506-4D45-BE9C-2D8751BB70A6}"
+- ID: "11d5bd82-ecc9-4adf-b374-396dfe626d4d"
+  Hint: FacetTogglingOperator
+  Value: 1
+- ID: "21f86a99-b823-4cbb-8183-dea9d72855ca"
+  Hint: FacetField
+  Value: commerceancestornames
+- ID: "a386d9e4-61dc-4a92-898c-f7fa2774ca2d"
+  Hint: FacetUseAnd
+  Value: 1
+- ID: "ab337745-b996-484c-9366-4be96dabb258"
+  Hint: FacetIsMultiValueField
+  Value: 1
+- ID: "b8e1baba-7040-4304-87f3-c9148ff8ce6c"
+  Hint: FacetIncludeInOmniBox
+  Value: default
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: facetDepartment
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171005T015514Z
+    - ID: "56c4a9bf-b2a0-43f5-a055-c74037adb284"
+      Hint: FacetValueCaption
+      Value: Phones=Super%20phones
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "976807a8-e981-4127-9f1f-f12188a5550d"
+      Hint: FacetTitle
+      Value: Department
+    - ID: "b877794e-482c-487a-b576-53272da9f0b1"
+      Hint: FacetNumberOfValues
+      Value: 5
+    - ID: "ba7a0fc4-8dee-4c05-9e80-a7e6b8cf89b7"
+      Hint: FacetName
+      Value: Department

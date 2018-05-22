@@ -1,0 +1,14 @@
+﻿---
+ID: "a6734701-5952-49bb-bbc0-18d15251810e"
+Parent: "64bd9b66-1baa-4955-bb06-3abb9b3fb207"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170808T212424Z

@@ -1,0 +1,28 @@
+﻿---
+ID: "be1bfc79-ee6e-4dbe-a1b5-f9f7f5f1500b"
+Parent: "9670400b-e29e-40da-a9c1-b7df9fd1d0db"
+Template: "75a4ffc2-2607-41a2-ab3c-992d8ae98dde"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Tabs/All Content Tab
+DB: master
+SharedFields:
+- ID: "5ba24bd7-3a4a-4c6d-a39d-132f06b8cb25"
+  Hint: Layout
+  Value: Card
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: tabAllContent
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T211521Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "646692a3-52a9-4dfa-bc75-305d91f6f05d"
+      Hint: TabCaption
+      Value: All Content

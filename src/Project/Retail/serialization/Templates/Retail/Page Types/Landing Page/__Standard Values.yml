@@ -16,7 +16,7 @@ SharedFields:
     <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{5F53E1F4-CFBA-45E4-8F86-A786EB590BAA}">
+        l="{83EEB1E8-D75E-4ABE-984A-A1275E5C27F7}">
         <r
           id="{E7AE3F87-CF66-40F2-A9F5-33ECF08BC777}"
           ph="head"
@@ -51,11 +51,6 @@ SharedFields:
           id="{8832BA30-99C3-4D20-9B1C-237D910A153F}"
           ph="navbar-right"
           uid="{18FF41E9-FC4A-45FB-BCF9-54B89AB6CD19}" />
-        <r
-          ds=""
-          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
-          ph="navbar-activity"
-          uid="{61807E4C-9FF2-4475-A2A3-839A66F56C8B}" />
         <r
           id="{604ECBB6-2BBF-45AF-AC6E-BA9F853E7A03}"
           ph="navbar-activity"

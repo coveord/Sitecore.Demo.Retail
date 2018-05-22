@@ -1,0 +1,63 @@
+﻿---
+ID: "0dc3caf5-2518-42bd-9223-5a85001557b8"
+Parent: "a90db04f-1077-4b28-9bd1-3270b250c26c"
+Template: "2d40366d-26d1-4585-94b4-4e70b4729eb9"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Scopes/Recommentaions Automatic Boosting
+DB: master
+SharedFields:
+- ID: "ecbda518-938a-46f5-bcf4-d6938149603b"
+  Hint: EnableAutomaticBoosting
+  Value: |
+    <?xml version="1.0" encoding="utf-16"?>
+    <AutomaticBoostingState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Enabled>true</Enabled>
+      <Profiles>
+        <ProfileState>
+          <Name>Focus</Name>
+          <Selected>false</Selected>
+          <BoostingInfluence />
+          <BoostingWeightRange />
+          <DominantKeysBoostingInfluence />
+        </ProfileState>
+        <ProfileState>
+          <Name>Function</Name>
+          <Selected>false</Selected>
+          <BoostingInfluence />
+          <BoostingWeightRange />
+          <DominantKeysBoostingInfluence />
+        </ProfileState>
+        <ProfileState>
+          <Name>Persona</Name>
+          <Selected>false</Selected>
+          <BoostingInfluence />
+          <BoostingWeightRange />
+          <DominantKeysBoostingInfluence />
+        </ProfileState>
+        <ProfileState>
+          <Name>Retail Persona</Name>
+          <Selected>true</Selected>
+          <BoostingInfluence>100</BoostingInfluence>
+          <BoostingWeightRange>1</BoostingWeightRange>
+          <DominantKeysBoostingInfluence>50</DominantKeysBoostingInfluence>
+        </ProfileState>
+        <ProfileState>
+          <Name>Score</Name>
+          <Selected>false</Selected>
+          <BoostingInfluence />
+          <BoostingWeightRange />
+          <DominantKeysBoostingInfluence />
+        </ProfileState>
+      </Profiles>
+    </AutomaticBoostingState>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170915T184707Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

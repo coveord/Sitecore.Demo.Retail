@@ -1,0 +1,34 @@
+﻿---
+ID: "d353ba59-20d9-46e6-8de5-dcd818ab96d8"
+Parent: "847d93b5-a240-4297-89bf-990a9f54ebd9"
+Template: "475e9026-333f-432d-a4dc-52e03b75cb6b"
+Path: /sitecore/system/Marketing Control Panel/Goals/Retail/Coveo Retail/Pay the cart
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Business/16x16/paragraph.png
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{689E2994-4656-4C58-9112-7826CB46EE69}"
+- ID: "ac6ba888-4213-43bd-b787-d8da2b6b881f"
+  Hint: Name
+  Value: Pay the cart
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171026T012807Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{39156DC0-21C6-4F64-B641-31E85C8F5DFE}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "797466f5-763b-4299-b6ad-e4192bf21222"
+      Hint: Description
+      Value: When a user is confirming a transaction by buying the items in the cart

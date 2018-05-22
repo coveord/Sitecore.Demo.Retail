@@ -1,0 +1,23 @@
+﻿---
+ID: "09fb687a-ffe6-4687-8123-1a27f2d8f747"
+Parent: "898937b5-f05a-45a9-8742-44fb0cb3ef69"
+Template: "aa49c002-2af9-43be-9d06-96510384d9ba"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Position Providers
+DB: master
+BranchID: "a16527d0-f782-48a9-beda-fc49de2c0a57"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T184655Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

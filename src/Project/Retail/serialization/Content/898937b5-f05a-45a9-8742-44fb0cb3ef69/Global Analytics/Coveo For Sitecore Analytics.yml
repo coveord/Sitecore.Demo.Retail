@@ -1,0 +1,18 @@
+﻿---
+ID: "a4880aad-8bd5-4ba5-be4e-1bbb7cf0b082"
+Parent: "76a19ae5-325b-4b0f-ac7c-6471350cd6d0"
+Template: "25577fde-9c8c-4d1c-9b65-b6c16aa16881"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Analytics/Coveo For Sitecore Analytics
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180510T152149Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

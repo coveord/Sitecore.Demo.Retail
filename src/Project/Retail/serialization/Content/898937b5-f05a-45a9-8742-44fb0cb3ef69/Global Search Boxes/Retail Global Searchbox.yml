@@ -1,0 +1,31 @@
+﻿---
+ID: "c002f534-6fdf-4048-aadc-120f22cc353d"
+Parent: "ff3d490e-2b90-4147-8b9c-366db3e67315"
+Template: "6d0fe651-03c9-43c6-8831-00a4cde05ae7"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Search Boxes/Retail Global Searchbox
+DB: master
+SharedFields:
+- ID: "3365e9aa-3c20-4279-96f6-28636689ff18"
+  Hint: EnableQueryExtensionAddon
+  Value: 1
+- ID: "b05aa5c1-812a-4c79-a706-5c8e1a2733bb"
+  Hint: OverrideSearchHub
+  Value: 
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: RetailCoveoSearchbox
+- ID: "e29c2085-1bc7-40d0-a02a-c554595a6a94"
+  Hint: SearchPageUri
+  Value: "{216F372C-B561-469D-B02F-549ACA6B6D2F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T200914Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

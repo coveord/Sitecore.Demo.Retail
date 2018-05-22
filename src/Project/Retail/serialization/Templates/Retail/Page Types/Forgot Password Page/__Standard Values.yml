@@ -48,11 +48,6 @@ SharedFields:
           ph="navbar-right"
           uid="{57EB4DA1-8CF9-463F-874A-B259008A31C8}" />
         <r
-          ds=""
-          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
-          ph="navbar-activity"
-          uid="{9330EC3F-2BBC-4CC0-BCAE-7F755B329518}" />
-        <r
           id="{604ECBB6-2BBF-45AF-AC6E-BA9F853E7A03}"
           ph="navbar-activity"
           uid="{D994D700-D00F-45EF-BF4C-3E8780F7754B}" />

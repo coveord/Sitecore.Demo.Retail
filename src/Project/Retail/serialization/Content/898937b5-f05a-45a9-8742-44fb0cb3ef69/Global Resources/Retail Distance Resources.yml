@@ -1,0 +1,22 @@
+﻿---
+ID: "81d70a4d-dcda-40f9-b2bd-5ee4c4459332"
+Parent: "16271efa-1f5d-4f52-a349-edcdec9565cd"
+Template: "12cf1654-e858-4902-82f3-36ff8cc9e1bc"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Resources/Retail Distance Resources
+DB: master
+SharedFields:
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: coveod216a457
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180511T154752Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

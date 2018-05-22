@@ -1,0 +1,42 @@
+﻿---
+ID: "daf7eaca-b766-4ab6-b37e-a20a3e0ba29e"
+Parent: "ba04cc37-0740-437c-ae21-cc6307bc25d0"
+Template: "b67a8bb4-d9ab-4a46-a358-26e99d375d67"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Category Pages/Category Search Page Scopes/Televisions Query Ranking
+DB: master
+SharedFields:
+- ID: "55338b23-d40f-42c5-8937-fac155dacbfe"
+  Hint: BoostExpressionRules
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{33E2EBBA-E425-4D0A-80F1-0C4D03089F32}">
+        <conditions>
+          <condition
+            id="{36831DCB-0532-4E84-879C-25E09B094256}"
+            uid="AD86DA4288C74C92A11748EBABFB95BB"
+            fieldname="Brand"
+            operatorid="{4AC84242-881E-43D4-8E11-2EA27331DC8E}"
+            value="Clarity" />
+        </conditions>
+        <actions>
+          <action
+            id="{FB2A22A4-9E43-47EC-874F-7E15F7CF6526}"
+            uid="C63AF546322A47BC9ECC4E2C7F45F9C8"
+            weight="100" />
+        </actions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180510T152820Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

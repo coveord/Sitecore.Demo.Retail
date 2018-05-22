@@ -1,0 +1,18 @@
+﻿---
+ID: "5c598be1-de98-4e98-a6ae-63c101432fae"
+Parent: "a90db04f-1077-4b28-9bd1-3270b250c26c"
+Template: "b67a8bb4-d9ab-4a46-a358-26e99d375d67"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Scopes/Retail Query Ranking
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171026T134434Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,330 @@
+﻿---
+ID: "216f372c-b561-469d-b02f-549aca6b6d2f"
+Parent: "441b60d3-09bb-4111-a3ad-d10076b78b54"
+Template: "09fb2812-e751-4578-b1eb-0d2930ad215c"
+Path: /sitecore/content/Storefront/Home/CoveoSearch
+DB: master
+SharedFields:
+- ID: "05124b76-fa67-4123-87b9-16e1883e9244"
+  Hint: Sort Fields
+  Type: Multilist
+  Value: 
+- ID: "06a96efc-f2e5-45c3-a7dc-4dddfa366cc0"
+  Hint: CssCode
+  Value: |
+    #ExternalComponentSection,
+    .page-header{
+        display:none !important;
+    }
+    body header.header-fixed.header-has-top+main {
+        padding-top: 118px !important;
+    }
+    
+    @media (max-width: 991px) {
+        body header.header-fixed.header-has-top+main {
+            padding-top: 118px !important;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        body header.header-fixed.header-has-top+main {
+            padding-top: 70px !important;
+        }
+    }
+- ID: "420373a7-f888-490a-abd6-e1ba4fcb75e0"
+  Hint: Tools Search Facets
+  Type: Multilist
+  Value: 
+- ID: "5585a30d-b115-4753-93ce-422c3455deb2"
+  Hint: ShowInNavigation
+  Type: Checkbox
+  Value: 0
+- ID: "7e48ee19-93fc-4071-a192-470f1259eae0"
+  Hint: Runtime Search Facets
+  Type: Multilist
+  Value: 
+- ID: "8c4dad9d-1ea2-4eb7-ae19-d4c28604757a"
+  Hint: Facets
+  Type: Treelist
+  Value: |
+    {F80AC325-FE72-4242-8543-E421F0CD6E74}
+    {DCAD67E4-A0EB-4EBE-99B8-26C57DA43022}
+    {A906B878-2517-4E8A-B403-40B530F6386D}
+- ID: "b5e7b1df-4155-4862-8d81-1e63ed6d3bc2"
+  Hint: Tools Navigation Facets
+  Type: Multilist
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1104
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{1DE91068-1717-4B37-BAFD-A7BF7ACAB156}">
+          <p:d />
+        </r>
+        <r
+          uid="{F57AC5DE-D0F0-40C4-95AE-7E3371FD16F8}">
+          <p:d />
+        </r>
+        <r
+          uid="{897C99D8-9A09-4A4B-8336-B7D0E95FA84F}">
+          <p:d />
+        </r>
+        <r
+          uid="{73D00F74-0956-495D-B055-DDCF76AE26A3}">
+          <p:d />
+        </r>
+        <r
+          uid="{85517EC8-30AA-44BD-B996-867C66F08F1D}">
+          <p:d />
+        </r>
+        <r
+          uid="{CD2479ED-65A1-49FC-A655-AB44FFCDFA72}"
+          p:after="*[1=2]"
+          s:ds="{CCA626A6-1264-4B51-B9CF-0D8CB8714C22}"
+          s:id="{64FA0FF7-E416-48C4-8852-CDF57F41FA06}"
+          s:par=""
+          s:ph="page-layout" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F9C626EB-9C61-471B-B7A2-61757FA316C9}"
+              p:before="*"
+              s:ds="{F32D2FE7-A7FF-4CD5-B3B5-4C8F7D2D8522}"
+              s:id="{7BB9166C-352F-478E-A7A7-A85DC436F360}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-searchbox_dynamic_coveo6a90eef9/coveo-ui-searchbox-components_dynamic_coveoe3c96eae/coveo-ui-result-templates_dynamic_coveo3d0cbdb6" />
+            <r
+              uid="{3D0CBDB6-5968-4A70-9092-D10A3610DDC5}"
+              p:after="r[@uid='{F9C626EB-9C61-471B-B7A2-61757FA316C9}']"
+              s:ds="{7B4A1CE6-42E1-4B6B-9179-BF9C76219CE5}"
+              s:id="{1B8415D2-A9E7-4239-9A2A-163C03395273}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-searchbox_dynamic_coveo6a90eef9/coveo-ui-searchbox-components_dynamic_coveoe3c96eae" />
+            <r
+              uid="{3D9B2226-4A0A-43F1-BA21-35EC998133DD}"
+              p:after="r[@uid='{3D0CBDB6-5968-4A70-9092-D10A3610DDC5}']"
+              s:ds="{F2327D0A-1B5F-42F3-BC2B-9B3CA8A2070A}"
+              s:id="{1AF65AE3-7BA9-4F1F-89C2-1329A82C429E}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c/coveo-ui-sorts_dynamic_coveoe6b9fb0e" />
+            <r
+              uid="{F0952CFA-5C0F-4676-8E0F-3B7751A90A5E}"
+              p:after="r[@uid='{3D9B2226-4A0A-43F1-BA21-35EC998133DD}']"
+              s:ds="{458EEE7D-EC96-4024-931E-56EB4ACBE0F0}"
+              s:id="{CD624DFB-630F-4284-9347-285554A9FE3B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c/coveo-ui-sorts_dynamic_coveoe6b9fb0e" />
+            <r
+              uid="{ECF632CE-5D8D-4819-AAF1-2207465C0E63}"
+              p:after="r[@uid='{F0952CFA-5C0F-4676-8E0F-3B7751A90A5E}']"
+              s:ds="{C5F30323-9C22-477A-B0C5-0FE2BA1090A7}"
+              s:id="{CD624DFB-630F-4284-9347-285554A9FE3B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c/coveo-ui-sorts_dynamic_coveoe6b9fb0e" />
+            <r
+              uid="{E98DCFC8-C6D8-4B78-B86F-7417E7D02585}"
+              p:after="r[@uid='{ECF632CE-5D8D-4819-AAF1-2207465C0E63}']"
+              s:ds="{4BFDA6A8-4C5B-4A4D-8969-6069F07B7F1E}"
+              s:id="{047BF926-F444-46FE-B23F-6A5E79566013}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-header/coveo-ui-position-providers_dynamic_coveo175e480d" />
+            <r
+              uid="{B25DDA8D-4BAA-473B-9157-269775E30ACA}"
+              p:after="r[@uid='{E98DCFC8-C6D8-4B78-B86F-7417E7D02585}']"
+              s:id="{7284C82B-5E12-4247-8C4D-F689483C819A}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c" />
+            <r
+              uid="{9B8929D0-8B0F-4BA0-89B2-92CEB75146D2}"
+              p:after="r[@uid='{B25DDA8D-4BAA-473B-9157-269775E30ACA}']"
+              s:ds="{C049171C-6CFD-4B48-8167-EC4AE432B41C}"
+              s:id="{1129FBCD-79D1-4E47-8F92-10A02F37017E}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c/coveo-ui-results-summary-section_dynamic_coveob25dda8d" />
+            <r
+              uid="{FF7E44A9-E0F5-4CDE-9148-248D21E22CD2}"
+              p:after="r[@uid='{9B8929D0-8B0F-4BA0-89B2-92CEB75146D2}']"
+              s:ds="{0DC3CAF5-2518-42BD-9223-5A85001557B8}"
+              s:id="{54489CC0-A9A6-41F4-93D2-5C410A632747}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-header" />
+            <r
+              uid="{DD3518E9-C57E-4BD8-95BC-873BA30EFF5C}"
+              p:after="r[@uid='{FF7E44A9-E0F5-4CDE-9148-248D21E22CD2}']"
+              s:ds="{A4880AAD-8BD5-4BA5-BE4E-1BBB7CF0B082}"
+              s:id="{104B30A5-499C-4AF0-A670-8287E78107DD}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-header" />
+            <r
+              uid="{E3C96EAE-C935-4C19-B7EA-6D8EDE4C28DE}"
+              p:after="r[@uid='{DD3518E9-C57E-4BD8-95BC-873BA30EFF5C}']"
+              s:ds="{71CCB78B-9B91-4588-91A9-37DCD832D420}"
+              s:id="{C6B7791B-47BD-4923-A3A1-A98452EB41CD}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-searchbox_dynamic_coveo6a90eef9" />
+            <r
+              uid="{6A90EEF9-660C-45D4-A8A4-D98F4296B7F2}"
+              p:after="r[@uid='{E3C96EAE-C935-4C19-B7EA-6D8EDE4C28DE}']"
+              s:id="{9C61D639-E07C-4F21-A40F-91A4B42D0390}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section" />
+            <r
+              uid="{EDAA54D9-1C3C-44E4-9279-C5433E5651E5}"
+              p:after="r[@uid='{6A90EEF9-660C-45D4-A8A4-D98F4296B7F2}']"
+              s:ds="{C4EF9AF4-7666-4770-8A53-F5DE9E1613F8}"
+              s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{36178B6D-4E2E-4342-8F14-56967B1FE0A3}"
+              p:after="r[@uid='{EDAA54D9-1C3C-44E4-9279-C5433E5651E5}']"
+              s:ds="{F32D2FE7-A7FF-4CD5-B3B5-4C8F7D2D8522}"
+              s:id="{7BB9166C-352F-478E-A7A7-A85DC436F360}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results_dynamic_coveo36a0425d/coveo-ui-result-templates_dynamic_coveo8de27092" />
+            <r
+              uid="{8DE27092-E612-42ED-9755-19BEE1C5AD2B}"
+              p:after="r[@uid='{36178B6D-4E2E-4342-8F14-56967B1FE0A3}']"
+              s:ds="{C010AF91-14F7-43F6-96C9-BEC43CE296C2}"
+              s:id="{C2A2688A-5B1C-4AE9-9A3A-0B998D7A9FA0}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results_dynamic_coveo36a0425d" />
+            <r
+              uid="{E15C860E-9F49-4939-81CE-1D8D5BC613D5}"
+              p:after="r[@uid='{8DE27092-E612-42ED-9755-19BEE1C5AD2B}']"
+              s:id="{A163DFC4-3165-491A-B3F7-22FE8296B2FC}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c/coveo-ui-result-layout_dynamic_coveoad50a44d" />
+            <r
+              uid="{AD50A44D-0437-413E-A0A7-B4EDEB6C7D26}"
+              p:after="r[@uid='{E15C860E-9F49-4939-81CE-1D8D5BC613D5}']"
+              s:id="{1D51A851-C9D2-4964-9634-6D367228BF7C}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c" />
+            <r
+              uid="{E6B9FB0E-5085-4259-BD8B-6CFA6F71631A}"
+              p:after="r[@uid='{AD50A44D-0437-413E-A0A7-B4EDEB6C7D26}']"
+              s:id="{6797934F-90B9-432F-AD6D-EAF64487E53D}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c" />
+            <r
+              uid="{2695A7A7-95E9-4E84-8359-37B7336F6D76}"
+              p:after="r[@uid='{E6B9FB0E-5085-4259-BD8B-6CFA6F71631A}']"
+              s:ds="{A2B3503A-1FF5-4100-BA8D-09A110287BC7}"
+              s:id="{92400C60-06DD-4992-B7DD-15C2AA3CDD1D}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d" />
+            <r
+              uid="{BE0BE639-CDDA-4E26-A2EB-762730A6ACD9}"
+              p:after="r[@uid='{2695A7A7-95E9-4E84-8359-37B7336F6D76}']"
+              s:id="{9A1A68CE-83C0-47E7-BAEE-7F5BBEF6688F}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d" />
+            <r
+              uid="{DC18756A-E761-49C0-A5B3-558C58117DB5}"
+              p:after="r[@uid='{BE0BE639-CDDA-4E26-A2EB-762730A6ACD9}']"
+              s:id="{0F658711-23C1-494E-B4D5-BBD03B2BE861}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d" />
+            <r
+              uid="{B48A915C-2DD8-4624-A1A0-7151B4235997}"
+              p:after="r[@uid='{DC18756A-E761-49C0-A5B3-558C58117DB5}']"
+              s:id="{345437C0-7B02-474F-BEC1-09DD0F8B0019}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d" />
+            <r
+              uid="{617196FA-9DEC-40D4-A419-E6AB9D675C39}"
+              p:after="r[@uid='{B48A915C-2DD8-4624-A1A0-7151B4235997}']"
+              s:ds="{B9C770FB-AD40-412D-823D-994C0BD7AE90}"
+              s:id="{C4D83380-BB91-4FC3-BEF5-2E3303338EF6}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-footer-components_dynamic_coveo36a0425d" />
+            <r
+              uid="{3102E623-E8A7-4156-854E-B17B2C59B55A}"
+              p:after="r[@uid='{617196FA-9DEC-40D4-A419-E6AB9D675C39}']"
+              s:ds="{3C3DA749-C38E-4855-8FC5-F49572EEF937}"
+              s:id="{0BD1AAAB-0F08-47E1-BD73-2B6C68025A09}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-footer-components_dynamic_coveo36a0425d" />
+            <r
+              uid="{D877183D-BE02-4018-BA4C-DDD794AD946D}"
+              p:after="r[@uid='{3102E623-E8A7-4156-854E-B17B2C59B55A}']"
+              s:ds="{376BBE1F-3BF5-40F2-AE41-DA19A12E5A7A}"
+              s:id="{7BB9166C-352F-478E-A7A7-A85DC436F360}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results_dynamic_coveo36a0425d/coveo-ui-result-templates_dynamic_coveo35dec06c" />
+            <r
+              uid="{35DEC06C-C6E1-48B7-964A-66694A22F80F}"
+              p:after="r[@uid='{D877183D-BE02-4018-BA4C-DDD794AD946D}']"
+              s:ds="{5059C3B1-F52E-4189-A3F0-FCA00780C6C9}"
+              s:id="{C2A2688A-5B1C-4AE9-9A3A-0B998D7A9FA0}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results_dynamic_coveo36a0425d" />
+            <r
+              uid="{6C72B249-F865-4599-B2A8-5E9C5B6DA86C}"
+              p:after="r[@uid='{35DEC06C-C6E1-48B7-964A-66694A22F80F}']"
+              s:ds="{6DC1C75B-3F5F-4087-9CD2-3B44F21007E4}"
+              s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{CBF0C320-F4B8-4E1E-AB84-127DD6DC7A90}"
+              p:after="r[@uid='{6C72B249-F865-4599-B2A8-5E9C5B6DA86C}']"
+              s:ds="{1125C202-4DA3-4F1B-8BE0-8D2FD090F8E9}"
+              s:id="{38EFD2D8-1EA6-47F0-A13C-ED9D97A2E4BF}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{848F8FD4-060C-4E23-B6F1-A697B18E29B4}"
+              p:after="r[@uid='{CBF0C320-F4B8-4E1E-AB84-127DD6DC7A90}']"
+              s:ds="{D3B8067B-930F-4F7A-A00B-55E9727651A1}"
+              s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{D12E3CB7-2D73-4A84-8DFA-18EF69ADFC55}"
+              p:after="r[@uid='{848F8FD4-060C-4E23-B6F1-A697B18E29B4}']"
+              s:ds="{8CF02A6D-85A9-4A0C-BA1C-EE5113B27A95}"
+              s:id="{38EFD2D8-1EA6-47F0-A13C-ED9D97A2E4BF}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{B736283A-C5C5-48D8-955F-CB905B446D03}"
+              p:after="r[@uid='{D12E3CB7-2D73-4A84-8DFA-18EF69ADFC55}']"
+              s:ds="{806B596A-D477-4F79-8518-70E66F1DFB75}"
+              s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{CAA83D93-5C4F-495A-A9BE-C7F13E65BF2C}"
+              p:after="r[@uid='{B736283A-C5C5-48D8-955F-CB905B446D03}']"
+              s:ds="{D6A22FCC-F5F6-45A7-A6AD-78412810B6DD}"
+              s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{BAE9D21E-F1AD-42B8-A889-5A1BC09D7C4A}"
+              p:after="r[@uid='{CAA83D93-5C4F-495A-A9BE-C7F13E65BF2C}']"
+              s:id="{4C11B44C-55AF-48C7-ADC7-344497C879A3}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section" />
+            <r
+              uid="{36A0425D-2BAA-468A-8B17-F6FAFF596467}"
+              p:after="r[@uid='{BAE9D21E-F1AD-42B8-A889-5A1BC09D7C4A}']"
+              s:id="{1C70D35F-ECA6-4F33-97A3-6111B8436078}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section" />
+            <r
+              uid="{FBEBEE5E-1CA2-4153-A571-B207BA5B00E0}"
+              p:after="r[@uid='{36A0425D-2BAA-468A-8B17-F6FAFF596467}']"
+              s:id="{AD7D1F7E-532E-4182-80E8-DB0C2486B1B3}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface" />
+            <r
+              uid="{79F60FD7-EE83-4926-880D-895C81D519D8}"
+              p:after="r[@uid='{FBEBEE5E-1CA2-4153-A571-B207BA5B00E0}']"
+              s:id="{610BFB73-7703-492D-98C1-43E6E38F3E10}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-footer-section" />
+          </d>
+        </r>
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Search
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150107T172228Z
+    - ID: "80e30dd8-8021-45f5-9fe1-23d2702cc206"
+      Hint: SearchBoxTitle
+      Value: Find products and pages
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Search
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Search

@@ -1,0 +1,26 @@
+﻿---
+ID: "fe6c8215-93ce-48fe-ac02-e320138a2df2"
+Parent: "3d9e2a33-8537-47e7-bed7-dd32efd32ef3"
+Template: "562b92f1-5746-40e9-b425-2b78d8d67f36"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Category Pages/Category Search Page Tabs
+DB: master
+BranchID: "a16527d0-f782-48a9-beda-fc49de2c0a57"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T153644Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

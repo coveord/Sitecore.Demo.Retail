@@ -1,0 +1,43 @@
+﻿---
+ID: "a004edae-2f1a-4809-98e8-9faacca27b80"
+Parent: "a90db04f-1077-4b28-9bd1-3270b250c26c"
+Template: "27ca6d98-d7d5-4b59-9de6-5238ea05bf81"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Global Search/Global Scopes/Retail Recommendation Query Filter
+DB: master
+SharedFields:
+- ID: "4eaa4851-dde1-47a5-a13d-b433533ff78a"
+  Hint: FilterExpressionRules
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{EB25E4DD-5471-4485-9F2B-629A686B6DCF}">
+        <conditions>
+          <and
+            uid="2D40525F38AA4183801C13F8A85AA113">
+            <condition
+              id="{04D3C3C8-FF94-477A-BC2B-F17238CB239A}"
+              uid="AB66A7E1F53D471FBC17F04BDB046BEE"
+              templateid="{225F8638-2611-4841-9B89-19A5440A1DA1}" />
+            <condition
+              id="{36831DCB-0532-4E84-879C-25E09B094256}"
+              uid="2C0A9A1BE1E145929BD26BB67F16F9A5"
+              fieldname="Language"
+              value="en"
+              operatorid="{4AC84242-881E-43D4-8E11-2EA27331DC8E}" />
+          </and>
+        </conditions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170809T231541Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
