@@ -1,0 +1,59 @@
+@using Coveo.UI.Components
+@using Coveo.UI.Components.Extensions
+
+@if (Html.Coveo().IsEditingInPageEditor()) {
+    <div>Quickview Template</div>
+}
+
+<script class="result-template" type="text/underscore" id="retailQuickviewTemplate">
+
+<%
+    var imagesUrl = coveoFieldValue("imagesurl");
+	var stars = parseInt(coveoFieldValue("rating"));
+	var imagesUrl = coveoFieldValue("imagesurl");
+	var description = coveoFieldValue("description");
+	var departement = coveoFieldValue("parentpath").substring(74);
+    var price = parseFloat(coveoFieldValue("listprice")).toFixed(2);
+    var lastrebuilddate = new Date(coveoFieldValue("lastrebuilddate"));
+    var publishdate = new Date(coveoFieldValue("publishdate"));
+    var validfrom = new Date(coveoFieldValue("validfrom"));
+    var validto = new Date(coveoFieldValue("validto"));
+%>
+
+<div>
+    <h1>{{- title }}</h1>
+    <h2>$ {{- price }}</h2>
+
+    <h2>Rating</h2>
+    <% for (i = 0; i < stars; i++) { %>
+        <span class="coveo-retail-star glyphicon glyphicon-star"></span>
+    <% } %>
+
+    <h2>Description</h2>
+    <p>{{- description }}</p>
+
+    <div class="CoveoRecommendation"></div>
+    <div>
+        <div style="width: 40%; display: inline-block; float: left">
+            <h2>Specs</h2>
+            <p class="quickview-detail"><b>Last rebuild date:</b> {{- lastrebuilddate.toLocaleDateString() }}</p>
+            <p class="quickview-detail"><b>Published date:</b> {{- publishdate.toLocaleDateString() }}</p>
+            <p class="quickview-detail"><b>Valid from:</b> {{- validfrom.toLocaleDateString() }}</p>
+            <p class="quickview-detail"><b>Valid to:</b> {{- validto.toLocaleDateString() }}</p>
+            <p class="quickview-detail"><b>Name:</b> {{- coveoFieldValue("name") }}</p>
+            <p class="quickview-detail"><b>Datasource:</b> {{- coveoFieldValue("datasource") }}</p>
+            <p class="quickview-detail"><b>Catalog ID:</b> {{- coveoFieldValue("catalogitemid") }}</p>
+            <p class="quickview-detail"><b>Catalog name:</b> {{- coveoFieldValue("catalogname") }}</p>
+        </div>
+
+        {{ if (imagesUrl) { }}
+            <div style='width: 60%; display: inline-block'>
+                <h2>Images</h2>
+                <img src="{{- imagesUrl[0] }}" style="width: 100%"/>
+                <img src="{{- imagesUrl[1] }}" style="width: 100%"/>
+                <img src="{{- imagesUrl[2] }}" style="width: 100%"/>
+            </div>
+        {{ } }}
+    </div>
+</div>
+</script>

@@ -1,8 +1,15 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoveoCommerceSearch", "CoveoCommerceSearch", "{54D2E069-4900-4BE6-8B31-1251A136B5C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Feature.Commerce.CoveoCommerceSearch", "src\Feature\CoveoCommerceSearch\code\Sitecore.Feature.Commerce.CoveoCommerceSearch.csproj", "{8969A7EF-A9D1-4842-827A-6CFA41F45F0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commerce.CoveoCommerceIndexing", "Commerce.CoveoCommerceIndexing", "{3DE983C1-93E2-4934-9BEC-4A7E06475E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Commerce.CoveoCommerceIndexing", "src\Foundation\Commerce.CoveoCommerceIndexing\code\Sitecore.Foundation.Commerce.CoveoCommerceIndexing.csproj", "{DF0F09A1-3D44-4BB6-8279-125D21D5425E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Demo.Retail", "src\Project\Retail\code\Sitecore.Demo.Retail.csproj", "{114E21CE-7B7B-436E-AA5C-BE4C1ADCC655}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{1C515A08-DDF6-497A-9475-44F1990FC3CE}"
@@ -78,6 +85,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8969A7EF-A9D1-4842-827A-6CFA41F45F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8969A7EF-A9D1-4842-827A-6CFA41F45F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8969A7EF-A9D1-4842-827A-6CFA41F45F0A}.Demo-Retail|Any CPU.ActiveCfg = Demo-Retail|Any CPU
+		{8969A7EF-A9D1-4842-827A-6CFA41F45F0A}.Demo-Retail|Any CPU.Build.0 = Demo-Retail|Any CPU
+		{8969A7EF-A9D1-4842-827A-6CFA41F45F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8969A7EF-A9D1-4842-827A-6CFA41F45F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0F09A1-3D44-4BB6-8279-125D21D5425E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0F09A1-3D44-4BB6-8279-125D21D5425E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0F09A1-3D44-4BB6-8279-125D21D5425E}.Demo-Retail|Any CPU.ActiveCfg = Demo-Retail|Any CPU
+		{DF0F09A1-3D44-4BB6-8279-125D21D5425E}.Demo-Retail|Any CPU.Build.0 = Demo-Retail|Any CPU
+		{DF0F09A1-3D44-4BB6-8279-125D21D5425E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0F09A1-3D44-4BB6-8279-125D21D5425E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{114E21CE-7B7B-436E-AA5C-BE4C1ADCC655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{114E21CE-7B7B-436E-AA5C-BE4C1ADCC655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114E21CE-7B7B-436E-AA5C-BE4C1ADCC655}.Demo-Retail|Any CPU.ActiveCfg = Demo-Retail|Any CPU
@@ -140,6 +159,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{54D2E069-4900-4BE6-8B31-1251A136B5C5} = {C847060A-D78A-4219-B5D2-088C20B4E3D5}
+		{8969A7EF-A9D1-4842-827A-6CFA41F45F0A} = {54D2E069-4900-4BE6-8B31-1251A136B5C5}
+		{3DE983C1-93E2-4934-9BEC-4A7E06475E1E} = {A65C1E2B-A56A-4E86-B928-23176FC86DB8}
+		{DF0F09A1-3D44-4BB6-8279-125D21D5425E} = {3DE983C1-93E2-4934-9BEC-4A7E06475E1E}
 		{114E21CE-7B7B-436E-AA5C-BE4C1ADCC655} = {B3C10EC2-6B18-480D-8C75-CE4929838289}
 		{B3C10EC2-6B18-480D-8C75-CE4929838289} = {1C515A08-DDF6-497A-9475-44F1990FC3CE}
 		{F12F210F-76B3-4142-8AB9-06677BCAED1E} = {A65C1E2B-A56A-4E86-B928-23176FC86DB8}

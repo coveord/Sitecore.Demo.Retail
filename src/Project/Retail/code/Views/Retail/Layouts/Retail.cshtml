@@ -33,6 +33,8 @@
     @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
     @RenderAssetsService.Current.RenderStyles()
 
+    <link href="/styles/CoveoCommerce/CoveoCommerce.css" rel="stylesheet" />
+
     @Html.Sitecore().VisitorIdentification()
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -67,6 +69,22 @@
             @Html.Sitecore().Placeholder("header-top")
 
             @Html.Sitecore().Placeholder("navbar")
+
+            <div class="container" style="padding-bottom: 13px;">
+                <!-- Retail Search Resources -->
+                @Html.Sitecore().Rendering("{41C7C6DD-C132-44BD-890A-B035056BC054}", new { DataSource = "{935D727D-DCFF-47C5-9651-3114F8CE5785}" })
+                <!--Retail User Context-->
+                @Html.Sitecore().Rendering("{8231CD1A-3377-4FE8-A27C-F6382ACB8C52}", new { DataSource = "{EC7579BE-06AB-4921-9A87-CEF548A93343}" })
+                <!-- Retail Page View Analytics -->
+                @Html.Sitecore().Rendering("{DC336A78-04E4-4299-ACE8-39160A6AE863}", new { DataSource = "{39F1386F-33C9-473D-9C4D-71A609153855}" })
+                <!-- Retail Analytics for Global Search Box -->
+                @Html.Sitecore().Rendering("{104B30A5-499C-4AF0-A670-8287E78107DD}", new {Datasource = "{A4880AAD-8BD5-4BA5-BE4E-1BBB7CF0B082}"})
+                <!-- Retail Global Search Box -->
+                <div id="ExternalComponentSection" data-search-interface-id="RetailSearchInterface">
+                    <!--98A8F8F4-3100-4F58-8B0D-F03A341028C9 ID Custom search box -->
+                    @Html.Sitecore().Rendering("{98A8F8F4-3100-4F58-8B0D-F03A341028C9}", new { DataSource = "{C002F534-6FDF-4048-AADC-120F22CC353D}" })
+                </div>
+            </div>
         </header>
         <main role="main">
             @Html.Sitecore().Placeholder("page-layout")

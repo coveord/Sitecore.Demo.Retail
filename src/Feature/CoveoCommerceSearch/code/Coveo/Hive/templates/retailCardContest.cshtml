@@ -1,0 +1,70 @@
+<% 
+    var imagesUrl = coveoFieldValue("imagesurl"); 	
+    var stars = parseInt(coveoFieldValue("rating"));
+    var imagesUrl = coveoFieldValue("imagesurl"); 
+    var description = coveoFieldValue("description");
+    var noImage = "/-/media/NoImage.png";
+    var onSale = coveoFieldValue("onsale");	
+    var preOrderable = coveoFieldValue("preorderable");
+    
+    if (title == "Sitecore Experience Platform"){	
+        var clickUriSpecial = "http://retail.coveodemo.com/sitecore/content/Storefront/Home/Product%20catalog/sitecore"
+    }else{	
+        var clickUriSpecial = "http://retail.coveodemo.com/sitecore/content/Storefront/Home/Product%20catalog/coveo"
+    };
+%>
+
+<div class="coveo-result-frame coveoforsitecore-template">
+
+    <div class="coveo-result-row">
+            <a href="<%- clickUriSpecial %>">
+                <% if (imagesUrl) { %>	
+                    <img class="coveo-retail-result-template-card-image" src="<%- imagesUrl[0]%>" />		
+                <% } else { %>
+                    <img class="coveo-retail-result-template-card-image" src="<%- noImage %>" />		
+                <% } %>
+            </a>
+        
+    </div>
+    
+    
+    <div class="coveo-result-row">
+
+        <div class="coveo-result-cell coveoforsitecore-information-section">            
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <div class="coveo-retail-flags-container">
+                        <% if (onSale === "1") { %>
+                            <span class="coveo-retail-onsale">On sale</span>
+                        <% } %>
+                        <% if (preOrderable === "1"){ %>
+                            <span class="coveo-retail-preorderable">Pre orderable</span>
+                        <% } %>    
+                    </div>
+                    <div class='coveo-title'>
+                        <% if (coveoFieldValue("HasLayout") === "1" || raw.syssource !== currentSourceName()) { %>
+                            <a class='CoveoResultLink'><%= title ? highlight(title, titleHighlights) : clickUriSpecial%></a>
+                        <% } else { %>
+                            <span class='CoveoResultTitle'><%= title ? highlight(title, titleHighlights) : ""%></span>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <span class="CoveoExcerpt"></span>
+                    <% for (i = 0; i < stars; i++) { %>
+                      <span class="coveo-retail-star glyphicon glyphicon-star"></span>      
+                    <%  }  %>  
+                    <br>                  
+                    <span> <%= highlightStreamText(description) %>  </span> 
+                    <div class='CoveoQuickview' data-template-id="retailQuickviewTemplate" data-size='70%' data-always-show='true'>
+                        <span class="coveo-retail-show-more">Show more</span>
+                    </div>               
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

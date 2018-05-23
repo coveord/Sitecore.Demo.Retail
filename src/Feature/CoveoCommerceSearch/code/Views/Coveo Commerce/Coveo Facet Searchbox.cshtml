@@ -1,0 +1,38 @@
+﻿@using System
+@using Coveo.UI.Components
+@using Coveo.UI.Components.Extensions
+@using Sitecore.Mvc
+@model Coveo.UI.Components.Models.SearchBoxes.ISearchboxModel
+
+@Html.Coveo().RenderErrorSummary(Model.ValidateModel())
+
+@Html.Coveo().InitializationPartial(Initializers.SEARCHBOX, Model)
+
+@if (Model.IsConfigured) {
+    <div id="@(Model.Id)_container"
+        @foreach (var property in @Model.Properties.SearchInterfaceSubModel.RawProperties) {
+            @: data-@(property.Key)='@(property.Value)'
+        }>
+        @if (@Model.Properties.SearchInterfaceSubModel.RawProperties.Count > 0) {
+            @Html.Partial(Partials.DEBUG_INFORMATION, Model.Properties.SearchInterfaceSubModel)
+        }
+        <div id="@Model.Id"
+             class="CoveoSearchbox"
+            @foreach (var property in @Model.RawProperties) {
+                @: data-@(property.Key)='@(property.Value)'
+            }>
+            @Html.Partial(Partials.DEBUG_INFORMATION, Model)
+            @Html.Coveo().ValidationPartial(Validators.RESOURCES_ARE_INCLUDED, Model)
+            <script>
+                var searchInterface = document.getElementById("@(Model.Id)_container");
+                Coveo.$$(searchInterface).on('afterInitialization', function(e, args) {
+                    Coveo.state(searchInterface, "layout", "card");
+                });
+            </script>
+            <div class="CoveoForSitecoreExpressions"></div>
+            <div class="CoveoForSitecoreConfigureSearchHub" data-sc-search-hub="@Model.Properties.SearchHub"></div>
+            <div class="CoveoFacetValueSuggestions" data-prebind-field="fieldTranslator" data-field="@@commerceancestornames"></div>
+        </div>
+        @Html.Sitecore().CoveoDynamicPlaceholder("coveo-ui-searchbox-components")
+    </div>
+}

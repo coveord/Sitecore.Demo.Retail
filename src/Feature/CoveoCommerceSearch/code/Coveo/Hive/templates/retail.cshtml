@@ -1,0 +1,64 @@
+<% 
+    var imagesUrl = coveoFieldValue("imagesurl"); 	
+	var stars = parseInt(coveoFieldValue("rating"));
+	var imagesUrl = coveoFieldValue("imagesurl"); 
+	var description = coveoFieldValue("description");
+	var noImage = "/-/media/NoImage.png";
+    var price = parseFloat(coveoFieldValue("listprice")).toFixed(2);
+    var onSale = coveoFieldValue("onsale");	
+    var preOrderable = coveoFieldValue("preorderable");  
+    var commerceancestornames = coveoFieldValue("commerceancestornames");
+    if (commerceancestornames){
+        commerceancestornames = commerceancestornames.toString().replace(",", " | ");      
+    }  	
+%>
+<div class="coveo-result-frame coveoforsitecore-template"> 
+    <div class="coveo-result-row">
+        <div class="coveo-result-cell coveo-quick-view-container">
+			<% if (imagesUrl) { %>	
+				<img class="coveo-retail-result-template-card-image" src="<%- imagesUrl[0]%>" />		
+			<% } else { %>
+				<img class="coveo-retail-result-template-card-image" src="<%- noImage %>" />		
+			<% } %>
+				
+            <div class='CoveoQuickview' data-template-id="retailQuickviewTemplate" data-size='70%' data-always-show='true'></div>
+                        
+        </div>
+
+        <div class="coveo-result-cell coveoforsitecore-information-section">
+            
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <div class='coveo-title'>
+                        <% if (coveoFieldValue("HasLayout") === "1" || raw.syssource !== currentSourceName()) { %>
+                            <a class='CoveoResultLink'><%= title ? highlight(title, titleHighlights) : clickUri%></a>
+                        <% } else { %>
+                            <span class='CoveoResultTitle'><%= title ? highlight(title, titleHighlights) : ""%></span>
+                        <% } %>
+                        
+                        <% if (onSale === "1") { %>
+                            <span class="coveo-retail-onsale">On sale</span>
+                        <% } %>
+                        <% if (preOrderable === "1"){ %>
+                            <span class="coveo-retail-preorderable">Pre orderable</span>
+                        <% } %>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <span class="CoveoExcerpt"></span>
+                    <span style="font-weight:bold"> <%- commerceancestornames %> </span> <br>
+                    <% for (i = 0; i < stars; i++) { %>
+                      <span class="coveo-retail-star glyphicon glyphicon-star"></span>      
+                    <%  }  %>  
+                    <br>
+                    <span class="coveo-retail-price">$<%- price %></span><br>                    
+                    <span> <%= highlightStreamText(description) %>  </span>                
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

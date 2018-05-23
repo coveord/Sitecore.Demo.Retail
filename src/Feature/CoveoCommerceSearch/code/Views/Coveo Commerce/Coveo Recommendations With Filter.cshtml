@@ -1,0 +1,51 @@
+﻿@using System
+@using System.Web.Mvc.Html
+@using Sitecore.Mvc
+@using Coveo.UI.Components
+@using Coveo.UI.Components.Extensions
+@model Coveo.UI.Components.Models.SearchInterfaces.IRecommendationsModel
+
+<div class="@(Html.Coveo().IsEditingInPageEditor() ? " coveo-page-editor-editing" : "")">
+    @Html.Coveo().RenderErrorSummary(Model.ValidateModel())
+
+    @Html.Coveo().InitializationPartial(Initializers.RECOMMENDATIONS, Model)
+
+    @if (Model.IsConfigured) {
+        @Html.Coveo().ValidationPartial(Validators.RESOURCES_ARE_INCLUDED, Model)
+        <div id="@Model.Id"
+            class="CoveoRecommendation @(Html.Coveo().IsEditingInPageEditor() ? " coveo-page-editor-editing" : "")"
+            @foreach (var property in @Model.RawProperties) {
+                @:data-@(property.Key)='@(property.Value)'
+            }>
+            @Html.Partial(Partials.DEBUG_INFORMATION, Model)
+            <div class="CoveoForSitecoreBindWithUserContext"></div>
+            <div class="CoveoForSitecoreExpressions"></div>
+            @Html.Sitecore().Rendering(RenderingIDs.ANALYTICS, new {
+                DataSource = @Model.ItemId
+            })
+            @Html.Sitecore().Rendering(RenderingIDs.COVEO_FOR_SITECORE_ANALYTICS, new {
+                DataSource = @Model.ItemId
+            })
+            <div class="coveo-recommendations-components">
+                @Html.Sitecore().CoveoDynamicPlaceholder("coveo-ui-recommendations-components")
+            </div>
+            @if (Model.HasHeader) {
+                <div class="coveo-recommendation-header">
+                    <div class="coveo-recommendation-title">@Model.Properties.Title</div>
+                </div>
+            }
+            <div class="coveo-recommendation-body">
+                @Html.Sitecore().CoveoDynamicPlaceholder("coveo-ui-results")
+            </div>
+        </div>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() {
+				var recommendationElement = document.getElementById("retailRecommendationSearchInterface");
+				Coveo.$$(recommendationElement).on("buildingQuery", function(e, args) {
+					var productID = document.getElementById('product-id').value;
+					args.queryBuilder.advancedExpression.addFieldExpression(CoveoForSitecore.Context.fields.toCoveo("@@key"), '<>', [productID]);
+				});
+			});
+		</script>
+    }
+</div>

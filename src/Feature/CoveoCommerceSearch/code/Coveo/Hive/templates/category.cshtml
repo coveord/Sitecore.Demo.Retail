@@ -1,0 +1,64 @@
+<% 
+    var imagesUrl = coveoFieldValue("imagesurl"); 
+    var description = coveoFieldValue("description");
+    var price = parseFloat(coveoFieldValue("listprice")).toFixed(2);	
+    var stars = parseInt(coveoFieldValue("rating"));
+    var onSale = coveoFieldValue("onsale");	
+%>
+<div class="coveo-result-frame coveoforsitecore-template">
+    <% if (onSale === "1") { %>
+        <span class="coveo-retail-onsale">On sale</span>
+    <% } %>
+    <div class="coveo-result-row">
+        <div class="">			
+			<% if (imagesUrl) { %>
+                <a href="<% clickUri %>">	
+				    <img class="coveo-retail-result-template-card-image" src="<%- imagesUrl[0]%>" />
+                </a>
+				<% for(i=1; i < imagesUrl.length; i++) { %>
+					<img class="coveo-retail-result-template-card-image-caroussel" src="<%- imagesUrl[i]%>" />
+				<% } %>
+			<% } else { %>
+				<span class="CoveoIcon"></span>
+			<% } %>
+				
+            <% if (hasHtmlVersion) { %>
+                <div class='CoveoQuickview'
+                        data-fixed='true'
+                        data-width='70%'
+                        data-heigth='70%'></div>
+            <% } %>
+        </div>
+
+        <div class="">
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <div class='coveo-title'>
+                        <% if (coveoFieldValue("HasLayout") === "1" || raw.syssource !== currentSourceName()) { %>
+                            <a class='CoveoResultLink'><%= title ? highlight(title, titleHighlights) : clickUri%></a>
+                        <% } else { %>
+                            <span class='CoveoResultTitle'><%= title ? highlight(title, titleHighlights) : ""%></span>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <span class="CoveoExcerpt"></span>
+                    <% for (i = 0; i < stars; i++) { %>
+                      <span class="coveo-retail-star glyphicon glyphicon-star"></span>      
+                    <%  }  %>  
+                    <br>
+					<span class="coveo-retail-price">$<%- price %></span><br>                    
+					<span><%- description %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coveo-result-row">
+        <div class="coveo-result-cell coveoforsitecore-details-section">
+        </div>
+    </div>
+</div>

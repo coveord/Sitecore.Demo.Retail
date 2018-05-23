@@ -1,0 +1,67 @@
+﻿@using Sitecore.Mvc
+@using Coveo.UI.Components
+@using Coveo.UI.Components.Extensions
+@model Coveo.UI.Components.Models.SearchInterfaces.ISearchInterfaceModel
+
+<div class="@(Html.Coveo().IsEditingInPageEditor() ? " coveo-page-editor-editing" : "")">
+    @Html.Coveo().RenderErrorSummary(Model.ValidateModel())
+    @if (Model.IsConfigured) {
+    
+    @Html.Partial(Partials.DEBUG_INFORMATION, Model)
+    <div id="@Model.Id"
+            class="@Model.CssClass"
+        @foreach (var property in @Model.RawProperties) {
+            @:data-@(property.Key)='@(property.Value)'
+        }>
+        <div class="coveo-search-interface-mandatory-section">
+            @if (Html.Coveo().IsEditingInPageEditor()) {
+                <div>Mandatory components (Edit the Search Interface properties to configure them)</div>
+                <div class="CoveoValidateAnalyticsIncluded"></div>
+            }
+            <div class="coveo-search-interface-mandatory-components">
+                <div class="CoveoForSitecoreExpressions"></div>
+                <div class="CoveoForSitecoreBindWithUserContext"></div>
+                <div class="CoveoForSitecoreSyntax"></div>
+                @Html.Sitecore().Rendering(RenderingIDs.AUTOMATIC_BOOSTING, new {
+                    DataSource = @Model.ItemId
+                })
+                @Html.Sitecore().Rendering(RenderingIDs.SITECORE_INSTANCE_FILTER, new {
+                    DataSource = @Model.ItemId
+                })
+                @Html.Sitecore().Rendering(RenderingIDs.QUERY_FILTER, new {
+                    DataSource = @Model.ItemId
+                })
+                @Html.Sitecore().Rendering(RenderingIDs.QUERY_RANKING, new {
+                    DataSource = @Model.ItemId
+                })
+                @Html.Sitecore().Rendering(RenderingIDs.EXTERNAL_CONTENT, new {
+                    DataSource = @Model.ItemId
+                })
+            </div>
+        </div>
+        @Html.Sitecore().CoveoDynamicPlaceholder("coveo-ui-content", @Model.Id)
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            @*
+                setTimeout(function() { }, 0) defers the initialization just enough to execute other DOMContentLoaded events in the page.
+                This is required by some components to allow them to register before initialization.
+            *@
+            setTimeout(function() {
+                var searchInterface = document.getElementById("@Model.Id");
+                @if (Html.Coveo().IsEditingInPageEditor()) {
+                    @: if (typeof(CoveoForSitecore) !== "undefined" && typeof(Sitecore) !== "undefined") {
+                        @: CoveoForSitecore.initializeSearchInterfaceForExperienceEditor(searchInterface);
+                    @: }
+                } else {
+                    @: if (typeof(CoveoForSitecore) !== "undefined") {
+                        @: CoveoForSitecore.initSearchInterface(searchInterface);
+                    @: }
+                }
+            }, 0);
+        });
+    </script>
+    }
+</div>
+
+

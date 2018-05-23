@@ -1,0 +1,27 @@
+<% 
+    var imagesUrl = coveoFieldValue("imagesurl");
+    var price = parseFloat(coveoFieldValue("listprice")).toFixed(2);
+	//This is used to prevent recommending an the item displayed on the actual page
+	if (!document.location.href.includes(coveoFieldValue("key"))) {
+%>
+<div class="coveo-result-frame coveoforsitecore-template">
+    <div class="coveo-recommendation-square-wrapper">
+        <div class="coveo-result-row">
+            <a href="<% clickUri %>">	
+                <img class="coveo-retail-recommendation-template-card-image" src="<%- imagesUrl[0]%>" />
+            </a>
+
+            <% if (coveoFieldValue("HasLayout") === "1" || raw.syssource !== currentSourceName()) { %>
+                <a class='CoveoResultLink'><%= title ? highlight(title, titleHighlights) : clickUri%></a>
+            <% } else { %>
+                <span class='CoveoResultTitle'><%= title ? highlight(title, titleHighlights) : ""%></span>
+            <% } %>        
+            <br>
+            <span class="coveo-recommendation-price">$<%- price %></span>
+            <br> 
+        </div>
+    </div>
+</div>
+<%
+    }
+%>
