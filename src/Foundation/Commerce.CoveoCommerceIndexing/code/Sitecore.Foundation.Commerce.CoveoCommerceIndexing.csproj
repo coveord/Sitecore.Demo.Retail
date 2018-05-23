@@ -68,7 +68,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Coveo.Framework">
+      <HintPath>..\..\..\..\lib\Sitecore\Coveo.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Kernel.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -87,9 +96,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\ComputedFields\ImagesUrlComputedField.cs" />
+    <Compile Include="Infrastructure\ComputedFields\DecimalPriceComputedField.cs" />
+    <Compile Include="Infrastructure\ComputedFields\IntegerRatingComputedField.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="App_Config\Include\Foundation\Foundation.Commerce.CoveoCommerceIndexing.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Commerce\code\Sitecore.Foundation.Commerce.csproj">
+      <Project>{662345ac-23ee-4125-87a6-0785795c2409}</Project>
+      <Name>Sitecore.Foundation.Commerce</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
