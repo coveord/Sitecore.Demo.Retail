@@ -15,6 +15,9 @@ var fs = require('fs');
 var unicorn = require("./scripts/unicorn.js");
 var habitat = require("./scripts/habitat.js");
 var exec = require("child_process").exec;
+var rimraf = require("gulp-rimraf");
+var rimrafDir = require("rimraf");
+var courier = require("./scripts/sitecore.courier.js");
 
 module.exports.config = config;
 
@@ -475,4 +478,70 @@ gulp.task("Kill-iisexpress-Tasks", function (callback) {
         console.log("stderr: " + stderr);
         callback();
     });
+});
+
+/*****************************
+ Package
+*****************************/
+var packageSourcePath = path.resolve("./packageSrc");
+var packageDestinationPath = path.resolve("./package");
+
+gulp.task("package", function (callback) {
+  config.runCleanBuilds = true;
+  config.websiteRoot = packageSourcePath;
+  config.buildConfiguration = "Release";
+
+  return runSequence(
+    "Package-Clean",
+    "03-Publish-All-Projects",
+    "Package-Clean-Files",
+    "Package-Enable-Production-Settings",
+    "Package-Copy-Serialized-Items",
+    "Package-Generate-Update-Package",
+    callback
+  );
+});
+
+gulp.task("Package-Clean", function (callback) {
+  rimrafDir.sync(packageSourcePath);
+  fs.mkdirSync(packageSourcePath);
+  rimrafDir.sync(packageDestinationPath);
+  fs.mkdirSync(packageDestinationPath);
+  callback();
+});
+
+gulp.task("Package-Clean-Files", function (callback) {
+  var excludeList = [
+    packageSourcePath + "\\bin\\{Antlr3,Coveo,Microsoft.Extensions.DependencyInjection,Microsoft.Web.Infrastructure,Newtonsoft,Rainbow,Sitecore,System,WebActivatorEx,WebGrease}*{dll,pdb}",
+    packageSourcePath + "\\packages.config",
+    packageSourcePath + "\\App_Config\\Include\\{Feature,Foundation,Project}\\*Serialization.config",
+    packageSourcePath + "\\App_Config\\Include\\{Feature,Foundation,Project,zzz}\\*.DevSettings.config",
+    "!" + packageSourcePath + "\\bin\\Sitecore.Support*dll",
+    "!" + packageSourcePath + "\\bin\\Sitecore.{Feature.Commerce,Foundation.Commerce,Demo}*dll"
+  ];
+  console.log(excludeList);
+
+  return gulp.src(excludeList, { read: false }).pipe(rimraf({ force: true }));
+});
+
+gulp.task("Package-Enable-Production-Settings", function (callback) {
+  fs.rename(
+    packageSourcePath + "\\App_Config\\Include\\zzz\\zzz.Demo.Production.Settings.config.example",
+    packageSourcePath + "\\App_Config\\Include\\zzz\\zzz.Demo.Production.Settings.config");
+  callback();
+});
+
+gulp.task("Package-Copy-Serialized-Items", function (callback) {
+  var includeList = [
+    "./src/**/serialization/**/*.yml",
+    "./src/**/serialization/Users/**/*.yml",
+    "./src/**/serialization/Roles/**/*.yml",
+    "!./src/**/bower_components/**/*.yml"
+  ];
+
+  return gulp.src(includeList).pipe(gulp.dest(packageSourcePath + "/Data"));
+});
+
+gulp.task("Package-Generate-Update-Package", function(callback) {
+  courier.runner("-t \"" + packageSourcePath + "\" -o \"" + packageDestinationPath + "/Sitecore.Demo.Retail.update\" -r -f", callback);
 });
