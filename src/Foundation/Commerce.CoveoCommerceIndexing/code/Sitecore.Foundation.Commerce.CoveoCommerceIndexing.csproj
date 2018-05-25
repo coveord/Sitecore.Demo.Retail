@@ -68,14 +68,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Coveo.Framework">
+    <Reference Include="Coveo.Framework, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\lib\Sitecore\Coveo.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="Coveo.SearchProviderBase">
+      <HintPath>..\..\..\..\lib\Sitecore\Coveo.SearchProviderBase.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Sitecore.ContentSearch">
+    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\lib\Sitecore\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel">
+    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\lib\Sitecore\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
@@ -99,7 +105,9 @@
     <Compile Include="Infrastructure\ComputedFields\ImagesUrlComputedField.cs" />
     <Compile Include="Infrastructure\ComputedFields\DecimalPriceComputedField.cs" />
     <Compile Include="Infrastructure\ComputedFields\IntegerRatingComputedField.cs" />
+    <Compile Include="Processors\FetchPageContent\PostProcessing\CleanHtmlTags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\HtmlTagsCleaner.cs" />
     <Content Include="App_Config\Include\Foundation\Foundation.Commerce.CoveoCommerceIndexing.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>

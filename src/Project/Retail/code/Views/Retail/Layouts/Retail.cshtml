@@ -65,6 +65,7 @@
     </form>
 
     <div id="main-container">
+        <!-- BEGIN NOINDEX -->
         <header class="bg-white @(Sitecore.Context.PageMode.IsExperienceEditor ? "header-static" : "header-fixed") header-has-top">
             @Html.Sitecore().Placeholder("header-top")
 
@@ -86,14 +87,17 @@
                 </div>
             </div>
         </header>
+        <!-- END NOINDEX -->
         <main role="main">
             @Html.Sitecore().Placeholder("page-layout")
         </main>
+        <!-- BEGIN NOINDEX -->
         <footer>
             @Html.Sitecore().Placeholder("footer")
         </footer>
 
         @Html.Sitecore().Placeholder("page-sidebar")
+        <!-- END NOINDEX -->
     </div>
     @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
 </body>
