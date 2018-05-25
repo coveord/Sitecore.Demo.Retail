@@ -105,10 +105,13 @@
     <Compile Include="Infrastructure\ComputedFields\ImagesUrlComputedField.cs" />
     <Compile Include="Infrastructure\ComputedFields\DecimalPriceComputedField.cs" />
     <Compile Include="Infrastructure\ComputedFields\IntegerRatingComputedField.cs" />
+    <Compile Include="Infrastructure\ComputedFields\SplitValueComputedField.cs" />
     <Compile Include="Processors\FetchPageContent\PostProcessing\CleanHtmlTags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\HtmlTagsCleaner.cs" />
-    <Content Include="App_Config\Include\Foundation\Foundation.Commerce.CoveoCommerceIndexing.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Commerce.CoveoCommerceIndexing.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup>

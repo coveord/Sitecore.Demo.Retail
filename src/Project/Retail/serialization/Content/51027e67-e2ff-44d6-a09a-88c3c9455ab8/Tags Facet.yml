@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "21f86a99-b823-4cbb-8183-dea9d72855ca"
   Hint: FacetField
-  Value: Tags
+  Value: SplitTags
 - ID: "ab337745-b996-484c-9366-4be96dabb258"
   Hint: FacetIsMultiValueField
   Value: 1
