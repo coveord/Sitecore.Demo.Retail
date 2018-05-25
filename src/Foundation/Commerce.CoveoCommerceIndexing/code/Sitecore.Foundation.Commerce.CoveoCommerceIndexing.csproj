@@ -68,6 +68,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Coveo.AbstractLayer, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Sitecore\Coveo.AbstractLayer.dll</HintPath>
+    </Reference>
     <Reference Include="Coveo.Framework, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\lib\Sitecore\Coveo.Framework.dll</HintPath>
@@ -106,6 +110,7 @@
     <Compile Include="Infrastructure\ComputedFields\DecimalPriceComputedField.cs" />
     <Compile Include="Infrastructure\ComputedFields\IntegerRatingComputedField.cs" />
     <Compile Include="Infrastructure\ComputedFields\SplitValueComputedField.cs" />
+    <Compile Include="Processors\FetchPageContent\Filters\NonCommerceItem.cs" />
     <Compile Include="Processors\FetchPageContent\PostProcessing\CleanHtmlTags.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\HtmlTagsCleaner.cs" />
