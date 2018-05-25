@@ -103,6 +103,7 @@
     <Content Include="Views\Coveo Commerce\Coveo Recommendations With Filter.cshtml" />
     <Content Include="Views\Coveo Commerce\Coveo Search Interface Default Card.cshtml" />
     <Content Include="Views\Coveo Commerce\Quickview.cshtml" />
+    <Content Include="Views\Coveo Commerce\Coveo Page View Analytics.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,34 @@
+﻿@* Custom view to fix the bug where the customMetadata.contentIdValue was always the ID of the data source item instead of the page item. *@
+@using Coveo.UI.Components
+@using Coveo.UI.Components.Extensions
+@model Coveo.UI.Components.Models.Analytics.IPageViewAnalyticsModel
+
+@Html.Coveo().RenderErrorSummary(Model.ValidateModel())
+
+@if (Model.IsConfigured) {
+    @Html.Partial(Partials.EDIT_TITLE, "Coveo Usage Analytics Page View")
+    
+    if (Model.Properties.AnalyticsEnabled) {
+        <script>
+            // Code snippet to load and log page view analytics.
+            // Imported from https://github.com/coveo/coveo.analytics.js
+            (function (c, o, v, e, O, u, a) {
+                a = 'coveoua'; c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                c[a].t = Date.now(); u = o.createElement(v); u.async = 1; u.src = e;
+                O = o.getElementsByTagName(v)[0]; O.parentNode.insertBefore(u, O)
+            })(window, document, 'script', 'https://static.cloud.coveo.com/coveo.analytics.js/coveoua.js');
+
+            coveoua('init', "", '@Model.Properties.CoveoAnalyticsEndpoint');
+            var customMetadata = @Html.Raw(Model.Properties.MetadataAsJson);
+            @* Override the contentIdValue to fix the bug *@
+            customMetadata.contentIdValue = '@Sitecore.Context.Item.ID.ToShortID()';
+            if (typeof (CoveoForSitecoreUserContext) !== "undefined") {
+                var currentContext = CoveoForSitecoreUserContext.handler.getContext();
+                Object.keys(currentContext).forEach(function(key) {
+                    customMetadata["c_context_" + key] = currentContext[key];
+                });
+            }
+            coveoua('send', 'pageview', customMetadata);
+        </script>
+    }
+}
