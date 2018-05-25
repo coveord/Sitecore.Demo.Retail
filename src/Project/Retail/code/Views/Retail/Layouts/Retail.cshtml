@@ -1,4 +1,5 @@
-﻿@using Sitecore.Commerce.Connect.CommerceServer
+﻿@using Coveo.UI.Components.Extensions
+@using Sitecore.Commerce.Connect.CommerceServer
 @using Sitecore.Foundation.Assets.Models
 @using Sitecore.Foundation.Assets.Services
 @using Sitecore.Mvc.Analytics.Extensions
@@ -81,10 +82,20 @@
                 <!-- Retail Analytics for Global Search Box -->
                 @Html.Sitecore().Rendering("{104B30A5-499C-4AF0-A670-8287E78107DD}", new {Datasource = "{A4880AAD-8BD5-4BA5-BE4E-1BBB7CF0B082}"})
                 <!-- Retail Global Search Box -->
-                <div id="ExternalComponentSection" data-search-interface-id="RetailSearchInterface">
+                <div id="HeaderExternalComponentSection" class="CoveoExternalComponentSection" data-search-interface-id="RetailSearchInterface">
                     <!--98A8F8F4-3100-4F58-8B0D-F03A341028C9 ID Custom search box -->
                     @Html.Sitecore().Rendering("{98A8F8F4-3100-4F58-8B0D-F03A341028C9}", new { DataSource = "{C002F534-6FDF-4048-AADC-120F22CC353D}" })
                 </div>
+                <script type="text/javascript">
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var externalComponentsSection = document.getElementById("HeaderExternalComponentSection");
+                        @if (Html.Coveo().IsEditingInPageEditor()) {
+                            @: CoveoForSitecore.initExternalComponentsSectionForExperienceEditor(externalComponentsSection);
+                        } else {
+                            @: CoveoForSitecore.initExternalComponentsSection(externalComponentsSection);
+                        }
+                    });
+                </script>
             </div>
         </header>
         <!-- END NOINDEX -->

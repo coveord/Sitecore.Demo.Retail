@@ -12,24 +12,8 @@ SharedFields:
 - ID: "06a96efc-f2e5-45c3-a7dc-4dddfa366cc0"
   Hint: CssCode
   Value: |
-    #ExternalComponentSection,
-    .page-header{
+    main .page-header{
         display:none !important;
-    }
-    body header.header-fixed.header-has-top+main {
-        padding-top: 118px !important;
-    }
-    
-    @media (max-width: 991px) {
-        body header.header-fixed.header-has-top+main {
-            padding-top: 118px !important;
-        }
-    }
-    
-    @media (max-width: 767px) {
-        body header.header-fixed.header-has-top+main {
-            padding-top: 70px !important;
-        }
     }
 - ID: "420373a7-f888-490a-abd6-e1ba4fcb75e0"
   Hint: Tools Search Facets
@@ -114,14 +98,8 @@ Languages:
               s:id="{7BB9166C-352F-478E-A7A7-A85DC436F360}"
               s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-searchbox_dynamic_coveo6a90eef9/coveo-ui-searchbox-components_dynamic_coveoe3c96eae/coveo-ui-result-templates_dynamic_coveo3d0cbdb6" />
             <r
-              uid="{3D0CBDB6-5968-4A70-9092-D10A3610DDC5}"
-              p:after="r[@uid='{F9C626EB-9C61-471B-B7A2-61757FA316C9}']"
-              s:ds="{7B4A1CE6-42E1-4B6B-9179-BF9C76219CE5}"
-              s:id="{1B8415D2-A9E7-4239-9A2A-163C03395273}"
-              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-searchbox_dynamic_coveo6a90eef9/coveo-ui-searchbox-components_dynamic_coveoe3c96eae" />
-            <r
               uid="{3D9B2226-4A0A-43F1-BA21-35EC998133DD}"
-              p:after="r[@uid='{3D0CBDB6-5968-4A70-9092-D10A3610DDC5}']"
+              p:after="r[@uid='{F9C626EB-9C61-471B-B7A2-61757FA316C9}']"
               s:ds="{F2327D0A-1B5F-42F3-BC2B-9B3CA8A2070A}"
               s:id="{1AF65AE3-7BA9-4F1F-89C2-1329A82C429E}"
               s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-results-header_dynamic_coveo36a0425d/coveo-ui-results-header-section_dynamic_coveob48a915c/coveo-ui-sorts_dynamic_coveoe6b9fb0e" />
@@ -167,19 +145,8 @@ Languages:
               s:id="{104B30A5-499C-4AF0-A670-8287E78107DD}"
               s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-header" />
             <r
-              uid="{E3C96EAE-C935-4C19-B7EA-6D8EDE4C28DE}"
-              p:after="r[@uid='{DD3518E9-C57E-4BD8-95BC-873BA30EFF5C}']"
-              s:ds="{71CCB78B-9B91-4588-91A9-37DCD832D420}"
-              s:id="{C6B7791B-47BD-4923-A3A1-A98452EB41CD}"
-              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-searchbox_dynamic_coveo6a90eef9" />
-            <r
-              uid="{6A90EEF9-660C-45D4-A8A4-D98F4296B7F2}"
-              p:after="r[@uid='{E3C96EAE-C935-4C19-B7EA-6D8EDE4C28DE}']"
-              s:id="{9C61D639-E07C-4F21-A40F-91A4B42D0390}"
-              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section" />
-            <r
               uid="{EDAA54D9-1C3C-44E4-9279-C5433E5651E5}"
-              p:after="r[@uid='{6A90EEF9-660C-45D4-A8A4-D98F4296B7F2}']"
+              p:after="r[@uid='{DD3518E9-C57E-4BD8-95BC-873BA30EFF5C}']"
               s:ds="{C4EF9AF4-7666-4770-8A53-F5DE9E1613F8}"
               s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
               s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
