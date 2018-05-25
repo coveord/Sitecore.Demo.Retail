@@ -75,12 +75,12 @@ div.coveo-recommendation-title {
 }
 
 body header.header-fixed.header-has-top + main {
-    padding-top: 173px;
+    padding-top: 186px;
 }
 
 @media (max-width: 991px) {
     body header.header-fixed.header-has-top + main {
-        padding-top: 174px;
+        padding-top: 187px;
     }
 
     .header-fixed {
@@ -90,7 +90,7 @@ body header.header-fixed.header-has-top + main {
 
 @media (max-width: 767px) {
     body header.header-fixed.header-has-top + main {
-        padding-top: 120px;
+        padding-top: 133px;
     }
 }
 
