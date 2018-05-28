@@ -111,5 +111,37 @@
         <!-- END NOINDEX -->
     </div>
     @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var coveoForSitecoreContext = document.querySelector('.CoveoForSitecoreContext');
+            var isUserAnonymous = true;
+            if (coveoForSitecoreContext && coveoForSitecoreContext.dataset) {
+                isUserAnonymous = coveoForSitecoreContext.dataset.scIsUserAnonymous === "true";
+            }
+
+            if (!isUserAnonymous) {
+                var userName = document.querySelector('#personalInfoPanel h4');
+
+                if (userName && userName.textContent) {
+                    userName = userName.textContent.trim();
+
+                    if (userName.textContent === "You are anonymous") {
+                        userName = null;
+                    } else if (userName === "You are known") {
+                        var email = document.querySelector('#personalInfoPanel dd:nth-child(2)');
+
+                        if (email && email.textContent) {
+                            userName = email.textContent.trim();
+                        }
+                    }
+                }
+
+                if (userName) {
+                    document.querySelector('a[href="/AccountManagement"]').textContent = userName;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
