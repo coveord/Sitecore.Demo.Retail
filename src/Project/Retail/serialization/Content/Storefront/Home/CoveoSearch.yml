@@ -241,8 +241,14 @@ Languages:
               s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
               s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
             <r
-              uid="{D12E3CB7-2D73-4A84-8DFA-18EF69ADFC55}"
+              uid="{8BCE2497-56F4-4367-AE06-E7F4DB73BFCE}"
               p:after="r[@uid='{848F8FD4-060C-4E23-B6F1-A697B18E29B4}']"
+              s:ds="{CCC32A0E-25B1-4B78-B58B-702FF56F55E9}"
+              s:id="{9E5B2ABC-9F74-4767-B511-D7E3A13CD50B}"
+              s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
+            <r
+              uid="{D12E3CB7-2D73-4A84-8DFA-18EF69ADFC55}"
+              p:after="r[@uid='{8BCE2497-56F4-4367-AE06-E7F4DB73BFCE}']"
               s:ds="{8CF02A6D-85A9-4A0C-BA1C-EE5113B27A95}"
               s:id="{38EFD2D8-1EA6-47F0-A13C-ED9D97A2E4BF}"
               s:ph="/page-layout/coveo-ui-content_dynamic_RetailSearchInterface/coveo-ui-main-section/coveo-ui-facets_dynamic_coveobae9d21e" />
