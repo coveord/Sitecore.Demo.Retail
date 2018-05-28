@@ -144,6 +144,8 @@
     </None>
     <None Include="Properties\PublishProfiles\commerce3.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="sitemap.xml" />
+    <Content Include="sitemap_short.xml" />
     <Content Include="styles\nite-commerce.css">
       <DependentUpon>nite-commerce.scss</DependentUpon>
     </Content>
