@@ -6,7 +6,10 @@
 @using Sitecore.Foundation.Commerce.Managers
 @using Sitecore.Foundation.Commerce.Models
 @using Sitecore.Commerce.Connect.CommerceServer.Orders.Models
+@using Sitecore.ExperienceExplorer.Business.Utilities.Extensions
+@using Sitecore.Feature.Commerce.Catalog.Factories
 @using Sitecore.Foundation.Commerce.Repositories
+@using Sitecore.Mvc.Presentation
 @inherits WebViewPage
 @{
     Layout = null;
@@ -22,6 +25,22 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     @MetadataManager.GetTags()
+    @{
+        var catalogItemContext = DependencyResolver.Current.GetService<CatalogItemContext>();
+        bool isProduct = catalogItemContext.IsProduct;
+        var productItem = catalogItemContext.Current?.Item;
+        if (isProduct && productItem != null) {
+            var brandField = productItem.Fields["Brand"];
+            if (brandField != null && brandField.HasValue) {
+                @:<meta name="productBrandName" content="@productItem.Fields["Brand"].Value" />
+            }
+            var productViewModelFactory = DependencyResolver.Current.GetService<ProductViewModelFactory>();
+            var productViewModel = productViewModelFactory.Create(RenderingContext.Current.Rendering.Item);
+            if (productViewModel != null && productViewModel.ListPrice.HasValue) {
+                @:<meta name="productListPrice" content="@productViewModel.ListPrice.Value.ToString()" />
+            }
+        }
+    }
 
     @if (!Sitecore.Context.PageMode.IsExperienceEditor)
     {
