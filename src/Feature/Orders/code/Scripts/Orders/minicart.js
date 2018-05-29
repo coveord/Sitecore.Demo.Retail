@@ -48,12 +48,13 @@ function removeItemResponse(data, success, sender) {
     ShowGlobalMessages(data);
 }
 
-function initMiniShoppingCart(sectionId) {
+function initMiniShoppingCart(sectionId, responsiveSectionId) {
     ClearGlobalMessages();
     AJAXPost("/api/storefront/cart/getcurrentcart", null, function (data, success, sender) {
         if (success && data.Success) {
             miniCartItemListViewModel = new MiniCartItemListViewModel(data);
             ko.applyBindings(miniCartItemListViewModel, document.getElementById(sectionId));
+            ko.applyBindings(miniCartItemListViewModel, document.getElementById(responsiveSectionId));
             manageMiniCartActions();
         }
 
@@ -83,6 +84,7 @@ function initCartAmount(updateAmount) {
         if (success && data.Success) {
             miniCartViewModel = new MiniCartViewModel(data.LineItemCount, data.Total);
             ko.applyBindings(miniCartViewModel, document.getElementById("miniCart"));
+            ko.applyBindings(miniCartViewModel, document.getElementById("miniCart-responsive"));
         }
 
         ShowGlobalMessages(data);

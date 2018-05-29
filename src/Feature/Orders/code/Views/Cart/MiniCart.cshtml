@@ -53,12 +53,12 @@
 
 <li class="dropdown" id="miniCart-responsive">
     <a href="@("/ShoppingCart")">
-        <span class="glyphicon glyphicon-shopping-cart"></span>
+        <span class="glyphicon glyphicon-shopping-cart"></span><span class="badge bg-primary" id="miniCartResponsiveItemCount" data-bind="text: lineitemcount"></span> 
     </a>
 </li>
 
 <script type="text/javascript">
     $(document).ready(function () {
-        initMiniShoppingCart("miniCart");
+        initMiniShoppingCart("miniCart", "miniCart-responsive");
     });
 </script>
