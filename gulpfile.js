@@ -559,7 +559,7 @@ gulp.task("Package-Copy-Serialized-Items", function (callback) {
     "./src/**/serialization/Roles/**/*.yml",
     "!./src/**/bower_components/**/*.yml",
     "!./src/Project/Retail/serialization/Storefront.Content/**/*.yml",
-    "!./src/Foundation/Errors/**/*.yml"
+    "!./src/Foundation/Commerce.Errors/serialization/**/*.yml"
   ];
 
   return gulp.src(includeList).pipe(gulp.dest(packageSourcePath + "/Data"));
