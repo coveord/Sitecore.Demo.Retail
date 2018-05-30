@@ -1,6 +1,7 @@
 ﻿@* Custom view to fix the bug where the customMetadata.contentIdValue was always the ID of the data source item instead of the page item. *@
 @using Coveo.UI.Components
 @using Coveo.UI.Components.Extensions
+@using Sitecore.Foundation.Commerce.Models
 @model Coveo.UI.Components.Models.Analytics.IPageViewAnalyticsModel
 
 @Html.Coveo().RenderErrorSummary(Model.ValidateModel())
@@ -21,7 +22,17 @@
             coveoua('init', "", '@Model.Properties.CoveoAnalyticsEndpoint');
             var customMetadata = @Html.Raw(Model.Properties.MetadataAsJson);
             @* Override the contentIdValue to fix the bug *@
-            customMetadata.contentIdValue = '@Sitecore.Context.Item.ID.ToShortID()';
+            @{
+                string contentIdValue = Sitecore.Context.Item.ID.ToShortID().ToString();
+                var catalogItemContext = DependencyResolver.Current.GetService<CatalogItemContext>();
+                var currentCatalogItemContext = catalogItemContext.Current;
+                if (currentCatalogItemContext != null && currentCatalogItemContext.Item != null) {
+                    if (catalogItemContext.IsProduct || catalogItemContext.IsCategory) {
+                        contentIdValue = currentCatalogItemContext.Item.ID.ToShortID().ToString();
+                    }
+                }
+            }
+            customMetadata.contentIdValue = '@contentIdValue';
             if (typeof (CoveoForSitecoreUserContext) !== "undefined") {
                 var currentContext = CoveoForSitecoreUserContext.handler.getContext();
                 Object.keys(currentContext).forEach(function(key) {
