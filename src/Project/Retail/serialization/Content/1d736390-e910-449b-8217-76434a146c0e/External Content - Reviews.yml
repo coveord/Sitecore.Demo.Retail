@@ -1,0 +1,22 @@
+﻿---
+ID: "d944099c-f4db-4942-8a39-269cd0a56456"
+Parent: "1d736390-e910-449b-8217-76434a146c0e"
+Template: "5c7d181b-637f-4ef8-9d7d-182f13aec06f"
+Path: "/sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Support Search/Support Search Scopes/External Content - Reviews"
+DB: master
+SharedFields:
+- ID: "3529b990-c344-47b8-b2f4-b69440a95dcb"
+  Hint: ExternalContentSources
+  Value: Reviews
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180529T211208Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

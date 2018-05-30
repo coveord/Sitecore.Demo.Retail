@@ -1,0 +1,23 @@
+﻿---
+ID: "c76640e6-6eea-440c-afa3-ca200ed33da8"
+Parent: "27b48f1a-e2a1-407e-9b3c-a6e5d59cb925"
+Template: "6af587eb-3d88-46eb-b4cf-382eb6bcc16a"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Support Search/Support Search Facets
+DB: master
+BranchID: "4b69445b-0d55-4e42-b3c7-bac4c4f8a696"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180529T202734Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,26 @@
+﻿---
+ID: "017c61d3-f233-4482-9ea0-bc12fdf957a4"
+Parent: "ae8d2d9c-846d-4a24-802d-49ede19465b6"
+Template: "a97ffdfc-d85b-482c-9422-044f33565932"
+Path: /sitecore/content/Storefront/Settings/Coveo Hive Placeholder Extender/Support Facet Placeholder Extender
+DB: master
+SharedFields:
+- ID: "939b8dec-ebb6-4730-b0d2-60a77c524214"
+  Hint: Placeholder Key
+  Value: "{DFEC3BE5-2A89-4BAF-AAA7-3452ED3EC17F}"
+- ID: "eb93d181-d262-4b7f-b8ce-eccae44a19a8"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{F569344F-3933-45F1-92FE-F6A44159D2AE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180530T134834Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

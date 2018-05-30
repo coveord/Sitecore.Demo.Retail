@@ -1,0 +1,26 @@
+﻿---
+ID: "00eb7df7-308f-4ac7-b6f4-955c400e6515"
+Parent: "ae8d2d9c-846d-4a24-802d-49ede19465b6"
+Template: "a97ffdfc-d85b-482c-9422-044f33565932"
+Path: /sitecore/content/Storefront/Settings/Coveo Hive Placeholder Extender/Support Placeholder Extender
+DB: master
+SharedFields:
+- ID: "939b8dec-ebb6-4730-b0d2-60a77c524214"
+  Hint: Placeholder Key
+  Value: "{8A11EE66-A1D4-457F-9D76-4694C0E60B2C}"
+- ID: "eb93d181-d262-4b7f-b8ce-eccae44a19a8"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{79DFC8A6-2B6D-4B17-A2D0-7A7D7E57ED32}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180529T202220Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

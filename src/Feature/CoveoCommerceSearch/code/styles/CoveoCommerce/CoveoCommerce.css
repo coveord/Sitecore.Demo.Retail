@@ -276,3 +276,17 @@ body header.header-fixed.header-has-top + main {
 .page-header > .container:first-child {
     padding-top: 0;
 }
+
+/*  Habitat Support */
+
+.CoveoSearchInterface .CoveoResultList .CoveoIcon.Reviews {
+    background-image: url(../../coveo/hive/image/list.svg);
+}
+
+.CoveoSearchInterface .CoveoResultList .CoveoIcon.KBs {
+    background-image: url(../../coveo/hive/image/kb.svg);
+}
+
+.CoveoSearchInterface .CoveoResultList .CoveoIcon.Reviews .coveo-icon-caption-overlay {
+    display: none;
+}

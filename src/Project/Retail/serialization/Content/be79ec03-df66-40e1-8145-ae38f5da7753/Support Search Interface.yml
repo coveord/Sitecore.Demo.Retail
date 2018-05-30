@@ -1,0 +1,42 @@
+﻿---
+ID: "ba16238d-509a-414e-8ae7-12e056e9c81b"
+Parent: "be79ec03-df66-40e1-8145-ae38f5da7753"
+Template: "ceea573d-0220-49e6-8f4e-c9730186bf4a"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Support Search/Support Search Search Interfaces/Support Search Interface
+DB: master
+SharedFields:
+- ID: "4eaa4851-dde1-47a5-a13d-b433533ff78a"
+  Hint: FilterExpressionRules
+  Type: Rules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{D57032AD-9506-47FF-848D-49FA68C0C3C9}">
+        <conditions>
+          <condition
+            id="{36831DCB-0532-4E84-879C-25E09B094256}"
+            uid="CC50569DDEA841E7BC54238BB480EBA8"
+            fieldname="sysfiletype"
+            value="html"
+            operatorid="{4AC84242-881E-43D4-8E11-2EA27331DC8E}" />
+        </conditions>
+      </rule>
+    </ruleset>
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: coveocad2a55a
+- ID: "fbcbca71-434a-469e-81fb-5fb47b97d2e6"
+  Hint: CustomCssClasses
+  Value: SupportSearch
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180529T202414Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

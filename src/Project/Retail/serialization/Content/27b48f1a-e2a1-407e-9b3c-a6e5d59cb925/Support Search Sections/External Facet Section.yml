@@ -1,0 +1,22 @@
+﻿---
+ID: "886f33b8-0764-4365-a056-84a9e897ad24"
+Parent: "7ef0ce5f-df97-4525-abd8-5cc6594e34b5"
+Template: "80700b1c-a8ce-400c-8d8f-dfda9b4570ba"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Support Search/Support Search Sections/External Facet Section
+DB: master
+SharedFields:
+- ID: "7abe2b9b-af3b-4d37-b9c2-c5a00b2aa27e"
+  Hint: BoundSearchInterface
+  Value: "{BA16238D-509A-414E-8AE7-12E056E9C81B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180530T135617Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
