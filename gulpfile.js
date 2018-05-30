@@ -484,6 +484,7 @@ gulp.task("Kill-iisexpress-Tasks", function (callback) {
  Package
 *****************************/
 var packageSourcePath = path.resolve("./packageSrc");
+var previousPackageSourcePath = path.resolve("./previousPackageSrc");
 var packageDestinationPath = path.resolve("./package");
 
 gulp.task("package", function (callback) {
@@ -502,6 +503,22 @@ gulp.task("package", function (callback) {
   );
 });
 
+gulp.task("packagedelta", function (callback) {
+  config.runCleanBuilds = true;
+  config.websiteRoot = packageSourcePath;
+  config.buildConfiguration = "Release";
+
+  return runSequence(
+    "Package-Clean",
+    "03-Publish-All-Projects",
+    "Package-Clean-Files",
+    "Package-Enable-Production-Settings",
+    "Package-Copy-Serialized-Items",
+    "Package-Generate-Delta-Update-Package",
+    callback
+  );
+});
+
 gulp.task("packagedev", function (callback) {
   config.runCleanBuilds = true;
   config.websiteRoot = packageSourcePath;
@@ -513,6 +530,21 @@ gulp.task("packagedev", function (callback) {
     "Package-Clean-Files",
     "Package-Copy-Serialized-Items",
     "Package-Generate-Update-Package",
+    callback
+  );
+});
+
+gulp.task("packagedevdelta", function (callback) {
+  config.runCleanBuilds = true;
+  config.websiteRoot = packageSourcePath;
+  config.buildConfiguration = "Release";
+
+  return runSequence(
+    "Package-Clean",
+    "03-Publish-All-Projects",
+    "Package-Clean-Files",
+    "Package-Copy-Serialized-Items",
+    "Package-Generate-Delta-Update-Package",
     callback
   );
 });
@@ -567,4 +599,8 @@ gulp.task("Package-Copy-Serialized-Items", function (callback) {
 
 gulp.task("Package-Generate-Update-Package", function(callback) {
   courier.runner("-t \"" + packageSourcePath + "\" -o \"" + packageDestinationPath + "/Sitecore.Demo.Retail.update\" -r -f", callback);
+});
+
+gulp.task("Package-Generate-Delta-Update-Package", function (callback) {
+  courier.runner("-s \"" + previousPackageSourcePath + "\" -t \"" + packageSourcePath + "\" -o \"" + packageDestinationPath + "/Sitecore.Demo.Retail.Delta.update\" -r -f", callback);
 });
