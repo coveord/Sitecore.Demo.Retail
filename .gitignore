@@ -32,3 +32,5 @@ project.lock.json
 **/wwwroot/logs/*
 package/
 packageSrc/
+previousPackage/
+previousPackageSrc/
