@@ -1,0 +1,71 @@
+<% 
+    var source = raw.syssource
+    var stars = raw.reviewrating
+%>
+
+<div class="coveo-result-frame coveoforsitecore-template">
+    <div class="coveo-result-row">
+        <div class="coveo-result-cell coveo-quick-view-container">
+            <span class="CoveoIcon <%- source %>"></span>
+            <% if (hasHtmlVersion) { %>
+                <div class='CoveoQuickview'
+                     data-fixed='true'></div>
+            <% } %>
+        </div>
+
+        <div class="coveo-result-cell coveoforsitecore-information-section">
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <div class='coveo-title'>
+                        <% if (coveoFieldValue("HasLayout") === "1" || raw.syssource !== currentSourceName()) { %>
+                            <a class='CoveoResultLink'><%= title ? highlight(title, titleHighlights) : clickUri %></a>
+                        <% } else { %>
+                            <span class='CoveoResultTitle'><%= title ? highlight(title, titleHighlights) : '' %></span>
+                        <% } %>
+                        <% for (i = 0; i < stars; i++) { %>
+                        <span class="coveo-retail-star glyphicon glyphicon-star"></span>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="coveo-result-cell coveoforsitecore-time-cell">
+                    <% if (coveoFieldValue("created") === coveoFieldValue("updated")) { %>
+                        <div title='<%= translateLabel("Creation Time") %>'><%- dateTime(raw.sysdate) %></div>
+                    <% } else { %>
+                        <div title='<%= translateLabel("Last Time Modified") %>'><%- dateTime(raw.sysdate) %></div>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="coveo-result-row">
+                <div class="coveo-result-cell">
+                    <span class="CoveoExcerpt"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coveo-result-row">
+        <div class="coveo-result-cell coveoforsitecore-details-section">
+            <table class="CoveoFieldTable">
+                <tbody>
+                    <tr data-field='<%= coveoFieldName("@@_templatename") %>' data-caption='<%= translateLabel("Template") %>' />
+                    <% if (coveoFieldValue("created") === coveoFieldValue("updated")) { %>
+                        <tr data-field='<%= coveoFieldName("@@parsedcreatedby") %>' data-caption='<%= translateLabel("Created By") %>' />
+                    <% } else { %>
+                        <tr data-field='<%= coveoFieldName("@@parsedcreatedby") %>' data-caption='<%= translateLabel("Created By") %>' />
+                        <tr data-field='<%= coveoFieldName("@@created") %>' data-caption='<%= translateLabel("Created") %>' data-helper='dateTime' />
+                        <tr data-field='<%= coveoFieldName("@@parsedupdatedby") %>' data-caption='<%= translateLabel("Updated By") %>' />
+                    <% } %>
+                    <tr data-field='<%= coveoFieldName("@@parsedlanguage") %>' data-caption='<%= translateLabel("Language") %>' />
+                    <tr>
+                        <th class='CoveoCaption'><%= translateLabel("Uniform resource identifier") %></th>
+                        <td class='CoveoClickableUri'>
+                            <a class='CoveoResultLink' href="<%= clickUri%>"><%= clickUri%></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

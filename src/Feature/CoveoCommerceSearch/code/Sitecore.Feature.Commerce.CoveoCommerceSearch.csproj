@@ -112,6 +112,7 @@
     <Content Include="Coveo\Hive\templates\retailCard.cshtml" />
     <Content Include="Coveo\Hive\templates\retailCardContest.cshtml" />
     <Content Include="Coveo\Hive\templates\retailContest.cshtml" />
+    <Content Include="Coveo\Hive\templates\support.cshtml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="styles\CoveoCommerce\CoveoCommerce.css" />
     <Content Include="Views\Coveo Commerce\Coveo Facet Searchbox.cshtml" />

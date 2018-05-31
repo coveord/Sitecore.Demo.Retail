@@ -1,0 +1,34 @@
+﻿---
+ID: "be3ecb0b-2691-4b00-ac53-5bba079b1f27"
+Parent: "c76640e6-6eea-440c-afa3-ca200ed33da8"
+Template: "dc181cdf-76ab-45d5-9349-443af40bd6e2"
+Path: /sitecore/content/Storefront/Settings/Datasources/Coveo Hive Datasources/Support Search/Support Search Facets/Support Content Type Facet
+DB: master
+SharedFields:
+- ID: "21f86a99-b823-4cbb-8183-dea9d72855ca"
+  Hint: FacetField
+  Value: syssource
+- ID: "d48ad7e5-fd34-4ec2-b753-4e1867b05714"
+  Hint: ItemId
+  Value: coveo839c7f2d
+- ID: "d8b9d729-b81b-4c72-88d8-f8d60e478347"
+  Hint: FacetAllowedValues
+  Value: Reviews, KBs
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180530T135841Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "976807a8-e981-4127-9f1f-f12188a5550d"
+      Hint: FacetTitle
+      Value: Content Type
+    - ID: "ba7a0fc4-8dee-4c05-9e80-a7e6b8cf89b7"
+      Hint: FacetName
+      Value: Content Type
