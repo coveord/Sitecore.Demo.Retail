@@ -101,6 +101,27 @@ SharedFields:
           ph="/page-layout/section"
           uid="{D00DBB92-A2AD-4E94-817E-3184FA9429A8}" />
         <r
+          ds="{2DDF864D-EFEF-428D-A872-AD7780704E2F}"
+          id="{462C6522-6412-4E48-9012-624FAA898487}"
+          par=""
+          ph="/page-layout/section/col-huge"
+          uid="{81F64DF6-FB2B-4083-94BD-EF76619D5101}" />
+        <r
+          uid="{7ED63DE8-2D99-41D2-ADB5-D6C877DF97F9}"
+          ds="{A004EDAE-2F1A-4809-98E8-9FAACCA27B80}"
+          id="{213395F2-2A8B-472C-A1FA-7E9A34BE512F}"
+          ph="/page-layout/section/col-huge/coveo-ui-recommendations-components_dynamic_coveo81f64df6" />
+        <r
+          uid="{086F6710-2297-4A07-9218-7E263FC208A9}"
+          ds="{CD86A4D7-B3FA-4C8B-89C1-DB7C53ED3218}"
+          id="{C2A2688A-5B1C-4AE9-9A3A-0B998D7A9FA0}"
+          ph="/page-layout/section/col-huge/coveo-ui-results_dynamic_coveo81f64df6" />
+        <r
+          uid="{F12CA415-F16B-4284-B36E-263057343055}"
+          ds="{7F240614-B7DF-4C47-B26D-C3AE244703D9}"
+          id="{7BB9166C-352F-478E-A7A7-A85DC436F360}"
+          ph="/page-layout/section/col-huge/coveo-ui-results_dynamic_coveo81f64df6/coveo-ui-result-templates_dynamic_coveo086f6710" />
+        <r
           id="{0B0ECF42-1026-4DDA-866B-EEE84778E831}"
           ph="/page-layout/section/col-huge"
           uid="{E046C9C1-0650-40D6-8629-6AAFC6B22F08}" />
@@ -136,12 +157,6 @@ SharedFields:
           id="{CED18F24-62C2-445E-B0D9-045E3325297B}"
           ph="page-sidebar"
           uid="{3922F51F-1813-4A7D-8C2F-4E3D664ADA6E}" />
-        <r
-          ds="{2DDF864D-EFEF-428D-A872-AD7780704E2F}"
-          id="{2AD08259-E036-4786-9A15-D22AEEAE9EA6}"
-          par=""
-          ph="/page-layout/section/col-wide-2"
-          uid="{81F64DF6-FB2B-4083-94BD-EF76619D5101}" />
       </d>
     </r>
 - ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
