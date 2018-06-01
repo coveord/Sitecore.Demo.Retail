@@ -141,6 +141,19 @@
             }
 
             if (!isUserAnonymous) {
+                var email = document.querySelector('#personalInfoPanel dd:nth-child(2)');
+
+                if (email && email.textContent) {
+                    email = email.textContent.trim();
+
+                    var contactLinkElement = document.querySelector('a[href="https://retail-coveodemo-developer-edition.na59.force.com/"]');
+                    if (contactLinkElement) {
+                      contactLinkElement.href = contactLinkElement.href + '#' + email;
+                    }
+                } else {
+                    email = null;
+                }
+
                 var userName = document.querySelector('#personalInfoPanel h4');
 
                 if (userName && userName.textContent) {
@@ -149,10 +162,8 @@
                     if (userName.textContent === "You are anonymous") {
                         userName = null;
                     } else if (userName === "You are known") {
-                        var email = document.querySelector('#personalInfoPanel dd:nth-child(2)');
-
-                        if (email && email.textContent) {
-                            userName = email.textContent.trim();
+                        if (email) {
+                            userName = email;
                         }
                     }
                 }

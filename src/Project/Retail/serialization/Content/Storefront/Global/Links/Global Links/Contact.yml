@@ -22,4 +22,4 @@ Languages:
     - ID: "fe71c30e-f07d-4052-8594-c3028cd76e1f"
       Hint: Link
       Value: |
-        <link id="{FECC893F-7B4E-436E-9E28-3CBB959DF098}" querystring="" linktype="internal" text="" anchor="" url="/Storefront/Home/Customer Service" title="" class="" target="" />
+        <link linktype="external" url="https://retail-coveodemo-developer-edition.na59.force.com/" anchor="" class="contact-link" target="" />
