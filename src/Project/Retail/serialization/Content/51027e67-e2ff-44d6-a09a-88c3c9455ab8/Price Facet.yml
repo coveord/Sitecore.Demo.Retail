@@ -7,16 +7,16 @@ DB: master
 SharedFields:
 - ID: "0779d330-8f85-4c9c-92dc-762201c74cd4"
   Hint: FacetSliderNumberOfSteps
-  Value: 10
+  Value: 8
 - ID: "282207b5-a710-418c-8517-f38a0349a395"
   Hint: FacetField
   Value: retailprice
 - ID: "3559404c-8d85-40d0-8d7c-6bf6c73d35c9"
   Hint: FacetSliderEnd
-  Value: 1000
+  Value: 5000
 - ID: "8afe9d42-11c0-4fbd-8422-3b3ab872d483"
   Hint: FacetSliderGraphSteps
-  Value: 10
+  Value: 8
 - ID: "bc885cfb-fd9b-4fae-9487-73abbb9f4c1d"
   Hint: FacetName
   Value: Price
@@ -25,7 +25,7 @@ SharedFields:
   Value: priceFacet
 - ID: "d8029ec6-cf59-4592-8e1a-890ba198ad8d"
   Hint: FacetSliderStart
-  Value: 0
+  Value: 1000
 - ID: "ddab59ad-0361-4cce-9a41-7accf24eb568"
   Hint: FacetSliderRange
   Type: Checkbox
@@ -33,6 +33,9 @@ SharedFields:
 - ID: "e0782fe1-0e12-4f5c-a3d1-8935f7e3f3a7"
   Hint: FacetSliderDisplayGraph
   Value: 1
+- ID: "e0a047c1-0ab9-48f8-aac5-0149e6c12096"
+  Hint: FacetSliderUnitSign
+  Value: $
 Languages:
 - Language: en
   Versions:
